@@ -3,8 +3,6 @@
   <File Type="PA-TCL" Name="pong.tcl"/>
   <File Type="REPORTS-TCL" Name="pong_reports.tcl"/>
   <File Type="RDS-RDS" Name="pong.vds"/>
-  <File Type="RDS-UTIL" Name="pong_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="pong_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="pong.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

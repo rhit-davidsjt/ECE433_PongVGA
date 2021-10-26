@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1635265173">
-  <File Type="OPT-HWDEF" Name="pong.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="pong_bus_skew_routed.rpt"/>
   <File Type="PA-DCP" Name="pong.dcp"/>
-  <File Type="BITSTR-BMM" Name="pong_bd.bmm"/>
-  <File Type="ROUTE-PWR" Name="pong_power_routed.rpt"/>
+  <File Type="OPT-HWDEF" Name="pong.hwdef"/>
   <File Type="PA-TCL" Name="pong.tcl"/>
-  <File Type="REPORTS-TCL" Name="pong_reports.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="pong_power_summary_routed.pb"/>
+  <File Type="BITSTR-BMM" Name="pong_bd.bmm"/>
   <File Type="OPT-DCP" Name="pong_opt.dcp"/>
-  <File Type="OPT-DRC" Name="pong_drc_opted.rpt"/>
+  <File Type="REPORTS-TCL" Name="pong_reports.tcl"/>
   <File Type="PWROPT-DCP" Name="pong_pwropt.dcp"/>
   <File Type="PLACE-DCP" Name="pong_placed.dcp"/>
-  <File Type="PLACE-IO" Name="pong_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="pong_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="pong_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="pong_control_sets_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="pong_incremental_reuse_pre_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="pong_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="pong.bin"/>
@@ -24,25 +16,11 @@
   <File Type="ROUTE-ERROR-DCP" Name="pong_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="pong_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="pong_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="pong_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="pong_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="pong.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="pong_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="pong.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="pong_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pong_methodology_drc_routed.rpx"/>
   <File Type="BITSTR-SYSDEF" Name="pong.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="pong_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="pong_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="pong_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="pong_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="pong_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="pong_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="pong_timing_summary_routed.rpx"/>
   <File Type="RDI-RDI" Name="pong.vdi"/>
-  <File Type="ROUTE-CLK" Name="pong_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="pong_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="pong_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="pong_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pong_postroute_physopt_bb.dcp"/>
   <File Type="BG-BIT" Name="pong.bit"/>
@@ -50,8 +28,8 @@
   <File Type="BITSTR-NKY" Name="pong.nky"/>
   <File Type="PDI-FILE" Name="pong.pdi"/>
   <File Type="RCFI_FILE" Name="pong.rcfi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="CFI_FILE" Name="pong.cfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RNPI_FILE" Name="pong.rnpi"/>
   <File Type="NPI_FILE" Name="pong.npi"/>
   <File Type="RBD_FILE" Name="pong.rbd"/>
