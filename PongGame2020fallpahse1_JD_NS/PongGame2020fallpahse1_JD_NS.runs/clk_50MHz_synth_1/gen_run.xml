@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="clk_50MHz_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1635187089">
   <File Type="PA-TCL" Name="clk_50MHz.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="clk_50MHz_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="clk_50MHz_reports.tcl"/>
   <File Type="RDS-RDS" Name="clk_50MHz.vds"/>
   <File Type="RDS-UTIL" Name="clk_50MHz_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="clk_50MHz_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="clk_50MHz.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="clk_50MHz_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="clk_50MHz_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_50MHz">
     <File Path="$PSRCDIR/sources_1/ip/clk_50MHz/clk_50MHz.xci">
       <FileInfo>
@@ -42,9 +39,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

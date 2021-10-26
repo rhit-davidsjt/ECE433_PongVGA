@@ -12,7 +12,7 @@ module vsyncModule2020fall_tb;
 //input LineEnd, reset, clock,
 //output vsync, output [yresolution-1:0] yposition);
 
-	vsyncModule2020fall uut (SynchPulse, FrontPorch, ActiveVideo, 
+	vsyncModule2020fallTemplate uut (SynchPulse, FrontPorch, ActiveVideo, 
 	BackPorch, LineEnd, reset, clock, vsync, yposition);
 	
 	initial begin
