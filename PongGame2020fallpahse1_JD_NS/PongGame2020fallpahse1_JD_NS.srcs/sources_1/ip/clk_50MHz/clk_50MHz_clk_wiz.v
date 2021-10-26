@@ -56,7 +56,7 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// clk_out1__50.00000______0.000______50.0______151.636_____98.575
+// clk50MHz__50.00000______0.000______50.0______151.636_____98.575
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -69,18 +69,18 @@ module clk_50MHz_clk_wiz
 
  (// Clock in ports
   // Clock out ports
-  output        clk_out1,
+  output        clk50MHz,
   // Status and control signals
   output        locked,
-  input         clk_in1
+  input         clk100MHz
  );
   // Input buffering
   //------------------------------------
-wire clk_in1_clk_50MHz;
+wire clk100MHz_clk_50MHz;
 wire clk_in2_clk_50MHz;
   IBUF clkin1_ibufg
-   (.O (clk_in1_clk_50MHz),
-    .I (clk_in1));
+   (.O (clk100MHz_clk_50MHz),
+    .I (clk100MHz));
 
 
 
@@ -92,7 +92,7 @@ wire clk_in2_clk_50MHz;
   //    * Unused inputs are tied off
   //    * Unused outputs are labeled unused
 
-  wire        clk_out1_clk_50MHz;
+  wire        clk50MHz_clk_50MHz;
   wire        clk_out2_clk_50MHz;
   wire        clk_out3_clk_50MHz;
   wire        clk_out4_clk_50MHz;
@@ -139,7 +139,7 @@ wire clk_in2_clk_50MHz;
    (
     .CLKFBOUT            (clkfbout_clk_50MHz),
     .CLKFBOUTB           (clkfboutb_unused),
-    .CLKOUT0             (clk_out1_clk_50MHz),
+    .CLKOUT0             (clk50MHz_clk_50MHz),
     .CLKOUT0B            (clkout0b_unused),
     .CLKOUT1             (clkout1_unused),
     .CLKOUT1B            (clkout1b_unused),
@@ -152,7 +152,7 @@ wire clk_in2_clk_50MHz;
     .CLKOUT6             (clkout6_unused),
      // Input clock control
     .CLKFBIN             (clkfbout_buf_clk_50MHz),
-    .CLKIN1              (clk_in1_clk_50MHz),
+    .CLKIN1              (clk100MHz_clk_50MHz),
     .CLKIN2              (1'b0),
      // Tied to always select the primary input clock
     .CLKINSEL            (1'b1),
@@ -192,8 +192,8 @@ wire clk_in2_clk_50MHz;
 
 
   BUFG clkout1_buf
-   (.O   (clk_out1),
-    .I   (clk_out1_clk_50MHz));
+   (.O   (clk50MHz),
+    .I   (clk50MHz_clk_50MHz));
 
 
 

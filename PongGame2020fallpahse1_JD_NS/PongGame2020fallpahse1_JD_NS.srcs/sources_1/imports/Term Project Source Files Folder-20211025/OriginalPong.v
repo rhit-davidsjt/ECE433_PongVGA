@@ -181,7 +181,7 @@ endmodule
 // top-level module
 // -----------------------------------------------
 module pong(
-    input clk50,
+    input clk100,
     input rota,
     input rotb,
     output [3:0] red,
@@ -190,6 +190,10 @@ module pong(
     output hsync,
     output vsync
     );
+    
+    
+    //Deal with the need for a 100MHz clock input
+    clk_50MHz ClockChip(.clk50MHz(clk50),.clk100MHz(clk100));
 
 // divide input clock by two, and use a global 
 // clock buffer for the derived clock

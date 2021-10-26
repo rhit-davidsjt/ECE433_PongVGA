@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/davidsjt/Documents/2021-22/Fall/ECE433/Labs/ECE433_PongVGA/PongGame2020fallpahse1_JD_NS/PongGame2020fallpahse1_JD_NS.runs/clk_50MHz_synth_1'
+HD_PWD='C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2020fallpahse1_JD_NS/PongGame2020fallpahse1_JD_NS.runs/clk_50MHz_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

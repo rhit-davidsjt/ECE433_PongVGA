@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Oct 25 14:39:43 2021
--- Host        : davidsjt-stg4 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/davidsjt/Documents/2021-22/Fall/ECE433/Labs/ECE433_PongVGA/PongGame2020fallpahse1_JD_NS/PongGame2020fallpahse1_JD_NS.srcs/sources_1/ip/clk_50MHz/clk_50MHz_sim_netlist.vhdl
+-- Date        : Tue Oct 26 12:10:25 2021
+-- Host        : snownp-stg4 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim {C:/Users/snownp/ECE433/Final
+--               Project/ECE433_PongVGA/PongGame2020fallpahse1_JD_NS/PongGame2020fallpahse1_JD_NS.srcs/sources_1/ip/clk_50MHz/clk_50MHz_sim_netlist.vhdl}
 -- Design      : clk_50MHz
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -16,17 +16,17 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity clk_50MHz_clk_50MHz_clk_wiz is
   port (
-    clk_out1 : out STD_LOGIC;
+    clk50MHz : out STD_LOGIC;
     locked : out STD_LOGIC;
-    clk_in1 : in STD_LOGIC
+    clk100MHz : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of clk_50MHz_clk_50MHz_clk_wiz : entity is "clk_50MHz_clk_wiz";
 end clk_50MHz_clk_50MHz_clk_wiz;
 
 architecture STRUCTURE of clk_50MHz_clk_50MHz_clk_wiz is
-  signal clk_in1_clk_50MHz : STD_LOGIC;
-  signal clk_out1_clk_50MHz : STD_LOGIC;
+  signal clk100MHz_clk_50MHz : STD_LOGIC;
+  signal clk50MHz_clk_50MHz : STD_LOGIC;
   signal clkfbout_buf_clk_50MHz : STD_LOGIC;
   signal clkfbout_clk_50MHz : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED : STD_LOGIC;
@@ -67,13 +67,13 @@ clkin1_ibufg: unisim.vcomponents.IBUF
       IOSTANDARD => "DEFAULT"
     )
         port map (
-      I => clk_in1,
-      O => clk_in1_clk_50MHz
+      I => clk100MHz,
+      O => clk100MHz_clk_50MHz
     );
 clkout1_buf: unisim.vcomponents.BUFG
      port map (
-      I => clk_out1_clk_50MHz,
-      O => clk_out1
+      I => clk50MHz_clk_50MHz,
+      O => clk50MHz
     );
 mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
     generic map(
@@ -131,11 +131,11 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       CLKFBOUT => clkfbout_clk_50MHz,
       CLKFBOUTB => NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED,
       CLKFBSTOPPED => NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED,
-      CLKIN1 => clk_in1_clk_50MHz,
+      CLKIN1 => clk100MHz_clk_50MHz,
       CLKIN2 => '0',
       CLKINSEL => '1',
       CLKINSTOPPED => NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED,
-      CLKOUT0 => clk_out1_clk_50MHz,
+      CLKOUT0 => clk50MHz_clk_50MHz,
       CLKOUT0B => NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED,
       CLKOUT1 => NLW_mmcm_adv_inst_CLKOUT1_UNCONNECTED,
       CLKOUT1B => NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED,
@@ -168,9 +168,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity clk_50MHz is
   port (
-    clk_out1 : out STD_LOGIC;
+    clk50MHz : out STD_LOGIC;
     locked : out STD_LOGIC;
-    clk_in1 : in STD_LOGIC
+    clk100MHz : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of clk_50MHz : entity is true;
@@ -180,8 +180,8 @@ architecture STRUCTURE of clk_50MHz is
 begin
 inst: entity work.clk_50MHz_clk_50MHz_clk_wiz
      port map (
-      clk_in1 => clk_in1,
-      clk_out1 => clk_out1,
+      clk100MHz => clk100MHz,
+      clk50MHz => clk50MHz,
       locked => locked
     );
 end STRUCTURE;

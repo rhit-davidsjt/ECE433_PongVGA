@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Mon Oct 25 14:39:43 2021
-// Host        : davidsjt-stg4 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/davidsjt/Documents/2021-22/Fall/ECE433/Labs/ECE433_PongVGA/PongGame2020fallpahse1_JD_NS/PongGame2020fallpahse1_JD_NS.srcs/sources_1/ip/clk_50MHz/clk_50MHz_sim_netlist.v
+// Date        : Tue Oct 26 12:10:25 2021
+// Host        : snownp-stg4 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim {C:/Users/snownp/ECE433/Final
+//               Project/ECE433_PongVGA/PongGame2020fallpahse1_JD_NS/PongGame2020fallpahse1_JD_NS.srcs/sources_1/ip/clk_50MHz/clk_50MHz_sim_netlist.v}
 // Design      : clk_50MHz
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,36 +14,36 @@
 
 (* NotValidForBitStream *)
 module clk_50MHz
-   (clk_out1,
+   (clk50MHz,
     locked,
-    clk_in1);
-  output clk_out1;
+    clk100MHz);
+  output clk50MHz;
   output locked;
-  input clk_in1;
+  input clk100MHz;
 
-  (* IBUF_LOW_PWR *) wire clk_in1;
-  wire clk_out1;
+  (* IBUF_LOW_PWR *) wire clk100MHz;
+  wire clk50MHz;
   wire locked;
 
   clk_50MHz_clk_50MHz_clk_wiz inst
-       (.clk_in1(clk_in1),
-        .clk_out1(clk_out1),
+       (.clk100MHz(clk100MHz),
+        .clk50MHz(clk50MHz),
         .locked(locked));
 endmodule
 
 (* ORIG_REF_NAME = "clk_50MHz_clk_wiz" *) 
 module clk_50MHz_clk_50MHz_clk_wiz
-   (clk_out1,
+   (clk50MHz,
     locked,
-    clk_in1);
-  output clk_out1;
+    clk100MHz);
+  output clk50MHz;
   output locked;
-  input clk_in1;
+  input clk100MHz;
 
-  wire clk_in1;
-  wire clk_in1_clk_50MHz;
-  wire clk_out1;
-  wire clk_out1_clk_50MHz;
+  wire clk100MHz;
+  wire clk100MHz_clk_50MHz;
+  wire clk50MHz;
+  wire clk50MHz_clk_50MHz;
   wire clkfbout_buf_clk_50MHz;
   wire clkfbout_clk_50MHz;
   wire locked;
@@ -75,12 +75,12 @@ module clk_50MHz_clk_50MHz_clk_wiz
   IBUF #(
     .IOSTANDARD("DEFAULT")) 
     clkin1_ibufg
-       (.I(clk_in1),
-        .O(clk_in1_clk_50MHz));
+       (.I(clk100MHz),
+        .O(clk100MHz_clk_50MHz));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFG clkout1_buf
-       (.I(clk_out1_clk_50MHz),
-        .O(clk_out1));
+       (.I(clk50MHz_clk_50MHz),
+        .O(clk50MHz));
   (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
@@ -136,11 +136,11 @@ module clk_50MHz_clk_50MHz_clk_wiz
         .CLKFBOUT(clkfbout_clk_50MHz),
         .CLKFBOUTB(NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED),
         .CLKFBSTOPPED(NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED),
-        .CLKIN1(clk_in1_clk_50MHz),
+        .CLKIN1(clk100MHz_clk_50MHz),
         .CLKIN2(1'b0),
         .CLKINSEL(1'b1),
         .CLKINSTOPPED(NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED),
-        .CLKOUT0(clk_out1_clk_50MHz),
+        .CLKOUT0(clk50MHz_clk_50MHz),
         .CLKOUT0B(NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED),
         .CLKOUT1(NLW_mmcm_adv_inst_CLKOUT1_UNCONNECTED),
         .CLKOUT1B(NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED),
