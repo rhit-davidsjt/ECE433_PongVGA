@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log pong.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pong.tcl" );
+         "-log CRTcontroller2020fall.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CRTcontroller2020fall.tcl" );
 
 
 

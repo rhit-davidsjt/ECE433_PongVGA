@@ -11,7 +11,7 @@ module CRTClock2020fall_tb;
 //input Reset, Clock,
 //output reg PixelClock);
 
-	CRTClock2020fall uut (SystemClock, CRTclock, Reset, Clock, pixelclock);
+	CRTClock2020Template uut (SystemClock, CRTclock, Reset, Clock, pixelclock);
 
 	initial begin SystemClock = 100; CRTclock=25; Reset = 0; Clock = 0; end
  

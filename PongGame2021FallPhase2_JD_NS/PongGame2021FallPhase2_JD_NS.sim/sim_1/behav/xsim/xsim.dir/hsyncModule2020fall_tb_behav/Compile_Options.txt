@@ -1,0 +1,1 @@
+-wto "80c74e823ad54f9fa520ffdeaa43005f" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "hsyncModule2020fall_tb_behav" "xil_defaultlib.hsyncModule2020fall_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

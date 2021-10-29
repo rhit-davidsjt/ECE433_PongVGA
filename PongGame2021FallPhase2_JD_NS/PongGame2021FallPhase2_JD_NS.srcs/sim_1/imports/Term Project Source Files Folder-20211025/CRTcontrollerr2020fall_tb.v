@@ -21,7 +21,7 @@ module CRTcontroller2020fall_tb;
 		// Initialize Inputs
 		Xresolution = 8;
 		Yresolution = 4;
-		SystemClock = 6;
+		SystemClock = 5;
 		CRTClock=2;
 		reset = 0;
 		clock=0;

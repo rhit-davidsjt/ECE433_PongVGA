@@ -30,7 +30,7 @@ ClockedNegativeOneShot LineEndOneShotUnit(LineEnd, reset, clock, LineEndOneShot)
 //input S1,S0,Reset, CLOCK,
 //output 	reg [length-1:0]	Q,
 //output reg TerminalCount);
-UniversalCounter2020fall YPositionCounter(10'd0,10'd0,EndCount, ycount==EndCount && LineEndOneShot, LineEndOneShot, reset, clock, ycount, );
+UniversalCounter2020fall YPositionCounter(10'd0,10'd0,EndCount, ycount==EndCount && LineEndOneShot, LineEndOneShot || ycount==EndCount, reset, clock, ycount, );
 
 always @(*) yposition <= ycount;
 endmodule 

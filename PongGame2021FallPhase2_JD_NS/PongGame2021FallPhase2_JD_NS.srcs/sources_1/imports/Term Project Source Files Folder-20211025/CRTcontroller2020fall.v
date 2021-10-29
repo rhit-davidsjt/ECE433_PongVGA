@@ -21,14 +21,14 @@ input reset, clock, output hsync, vsync,
 output [ResolutionSize-1:0] xpos, ypos);
 
 //vsync is generated after active video and front porch from =>490 to >=491 
-parameter vSynchPulse=10'd2, vFrontPorch=10'd10, vBackPorch=10'd29; //vsynch=520
+//parameter vSynchPulse=10'd2, vFrontPorch=10'd10, vBackPorch=10'd29; //vsynch=520
 //following are simulation parameters for vsynch
-//parameter vSynchPulse=10'd1, vFrontPorch=10'd2, vBackPorch=10'd3; //vsynch=10 yresolution=4
+parameter vSynchPulse=10'd1, vFrontPorch=10'd2, vBackPorch=10'd3; //vsynch=10 yresolution=4
 //hsync is generated after active video and front porch from >664 to >=760 
 //parameter hSynchPulse=10'd95, hFrontPorch=10'd25, hBackPorch=10'd40; //hsynch=800
-parameter hSynchPulse=10'd95, hFrontPorch=10'd25, hBackPorch=10'd40;
+//parameter hSynchPulse=10'd95, hFrontPorch=10'd25, hBackPorch=10'd40;
 //following are simulation parameters for hsynch
-//parameter hSynchPulse=10'd2, hFrontPorch=10'd1, hBackPorch=10'd1; //hsynch=12, xresolution=8
+parameter hSynchPulse=10'd2, hFrontPorch=10'd1, hBackPorch=10'd1; //hsynch=12, xresolution=8
 
 wire LineEnd, PixelClock;
 //module hsyncModule2020fall #(parameter xresolution=10)(
@@ -51,6 +51,5 @@ vFrontPorch, LineEnd, reset, clock, vsync, ypos);
 //input [SystemClockSize-1:0] SystemClockFreq, CRTClockFreq, 
 //input Reset, Clock,
 //output reg PixelClock);
-CRTClock2020Template CRTclockUnit(SystemClockFreq, CRTClockFreq, 
-reset, clock, PixelClock);
+CRTClock2020Template CRTclockUnit(SystemClockFreq, CRTClockFreq, reset, clock, PixelClock);
 endmodule

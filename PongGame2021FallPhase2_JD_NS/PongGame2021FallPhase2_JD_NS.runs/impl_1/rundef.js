@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log pong.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source pong.tcl -notrace" );
+         "-log CRTcontroller2020fall.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source CRTcontroller2020fall.tcl -notrace" );
 
 
 

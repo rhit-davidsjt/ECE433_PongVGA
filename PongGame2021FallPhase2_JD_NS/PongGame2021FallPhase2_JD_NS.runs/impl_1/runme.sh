@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2020fallpahse1_JD_NS/PongGame2020fallpahse1_JD_NS.runs/impl_1'
+HD_PWD='C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log pong.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source pong.tcl -notrace
+EAStep vivado -log CRTcontroller2020fall.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source CRTcontroller2020fall.tcl -notrace
 
 

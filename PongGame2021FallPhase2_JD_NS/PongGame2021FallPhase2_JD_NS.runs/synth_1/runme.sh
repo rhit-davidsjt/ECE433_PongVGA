@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2020fallpahse1_JD_NS/PongGame2020fallpahse1_JD_NS.runs/synth_1'
+HD_PWD='C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log pong.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pong.tcl
+EAStep vivado -log CRTcontroller2020fall.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CRTcontroller2020fall.tcl

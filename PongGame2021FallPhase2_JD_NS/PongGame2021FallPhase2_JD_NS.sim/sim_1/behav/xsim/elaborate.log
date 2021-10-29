@@ -1,16 +1,20 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 80c74e823ad54f9fa520ffdeaa43005f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vsyncModule2020fall_tb_behav xil_defaultlib.vsyncModule2020fall_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 80c74e823ad54f9fa520ffdeaa43005f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CRTcontroller2020fall_tb_behav xil_defaultlib.CRTcontroller2020fall_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'EndCount' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/CRTClock2020Template.v:25]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.ClockedNegativeOneShot
 Compiling module xil_defaultlib.UniversalCounter2020fall
+Compiling module xil_defaultlib.hsyncModule2020fall
 Compiling module xil_defaultlib.vsyncModule2020fallTemplate
-Compiling module xil_defaultlib.vsyncModule2020fall_tb
+Compiling module xil_defaultlib.CRTClock2020Template
+Compiling module xil_defaultlib.CRTcontroller2020fall
+Compiling module xil_defaultlib.CRTcontroller2020fall_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot vsyncModule2020fall_tb_behav
+Built simulation snapshot CRTcontroller2020fall_tb_behav
