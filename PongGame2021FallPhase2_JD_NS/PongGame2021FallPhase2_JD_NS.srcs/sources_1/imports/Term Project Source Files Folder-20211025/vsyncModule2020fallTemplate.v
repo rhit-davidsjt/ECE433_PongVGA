@@ -15,11 +15,11 @@ input LineEnd, reset, clock,
 output vsync, output reg [yresolution-1:0] yposition);
 
 wire [yresolution-1:0] ycount;
-wire [yresolution-1:0] EndCount = SynchPulse + FrontPorch + ActiveVideo + BackPorch;
+wire [yresolution-1:0] EndCount=SynchPulse+FrontPorch+ActiveVideo+BackPorch;
 
 //vsync <= ~(ypos==490 || ypos==491);  // active for 95 clocks
 //SynchPulse piece would need to be changed if we want to attempt other resolutions
-assign vsync = ~(ycount == ActiveVideo + FrontPorch + (SynchPulse - 1) || ycount == ActiveVideo + FrontPorch + SynchPulse);
+assign vsync = ~(ycount == ActiveVideo + FrontPorch + (SynchPulse-1) || ycount == ActiveVideo + FrontPorch + (SynchPulse));
 //a counter is needed to generate synch signal and y coordinate
 //to be completed by students
 

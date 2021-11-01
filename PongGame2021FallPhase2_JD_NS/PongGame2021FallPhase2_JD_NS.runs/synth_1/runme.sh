@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log CRTcontroller2020fall.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CRTcontroller2020fall.tcl
+EAStep vivado -log PongGame2020fall_template.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PongGame2020fall_template.tcl

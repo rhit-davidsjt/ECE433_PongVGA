@@ -29,7 +29,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="90"/>
+    <Option Name="WTXSimLaunchSim" Val="129"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -58,15 +58,6 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTClock2020Template.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTClock2020Template.v"/>
-          <Attr Name="ImportTime" Val="1635186762"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/ClockedNegativeOneShot.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/ClockedNegativeOneShot.v"/>
@@ -85,15 +76,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/hsyncModule2020fall.v"/>
-          <Attr Name="ImportTime" Val="1635186762"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/vsyncModule2020fallTemplate.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/vsyncModule2020fallTemplate.v"/>
@@ -103,19 +85,30 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v">
+      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTClock2020Template.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v"/>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTClock2020Template.v"/>
           <Attr Name="ImportTime" Val="1635186762"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/OriginalPong.v">
+      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/OriginalPong.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/hsyncModule2020fall.v"/>
+          <Attr Name="ImportTime" Val="1635186762"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v"/>
           <Attr Name="ImportTime" Val="1635186762"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -142,6 +135,16 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/OriginalPong.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/OriginalPong.v"/>
+          <Attr Name="ImportTime" Val="1635186762"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/ClockedPositiveOneShot.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -154,7 +157,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="CRTcontroller2020fall"/>
+        <Option Name="TopModule" Val="vsyncModule2020fallTemplate"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -174,29 +177,19 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/imports/Term Project Source Files Folder-20211025/CRTcontrollerr2020fall_tb.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTcontrollerr2020fall_tb.v"/>
-          <Attr Name="ImportTime" Val="1635186762"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall_tb.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/hsyncModule2020fall_tb.v"/>
-          <Attr Name="ImportTime" Val="1635186762"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sim_1/imports/Term Project Source Files Folder-20211025/vsyncModule2020fall_tb.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/vsyncModule2020fall_tb.v"/>
+          <Attr Name="ImportTime" Val="1635186762"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/Term Project Source Files Folder-20211025/CRTcontrollerr2020fall_tb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTcontrollerr2020fall_tb.v"/>
           <Attr Name="ImportTime" Val="1635186762"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -213,9 +206,19 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sim_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall_tb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/hsyncModule2020fall_tb.v"/>
+          <Attr Name="ImportTime" Val="1635186762"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="CRTcontroller2020fall_tb"/>
+        <Option Name="TopModule" Val="vsyncModule2020fall_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>

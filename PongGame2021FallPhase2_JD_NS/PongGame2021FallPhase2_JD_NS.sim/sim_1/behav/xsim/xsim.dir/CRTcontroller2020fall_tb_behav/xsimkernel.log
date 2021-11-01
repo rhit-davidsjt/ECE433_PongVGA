@@ -1,7 +1,7 @@
-Running: xsim.dir/CRTcontroller2020fall_tb_behav/xsimk.exe -simmode gui -wdb CRTcontroller2020fall_tb_behav.wdb -simrunnum 0 -socket 54445
+Running: xsim.dir/CRTcontroller2020fall_tb_behav/xsimk.exe -simmode gui -wdb CRTcontroller2020fall_tb_behav.wdb -simrunnum 0 -socket 51668
 Design successfully loaded
-Design Loading Memory Usage: 6444 KB (Peak: 6444 KB)
-Design Loading CPU Usage: 77 ms
+Design Loading Memory Usage: 6384 KB (Peak: 6384 KB)
+Design Loading CPU Usage: 93 ms
 Simulation completed
-Simulation Memory Usage: 7176 KB (Peak: 7176 KB)
-Simulation CPU Usage: 93 ms
+Simulation Memory Usage: 7136 KB (Peak: 7136 KB)
+Simulation CPU Usage: 139 ms

@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1635543177">
-  <File Type="BITSTR-BMM" Name="CRTcontroller2020fall_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="CRTcontroller2020fall_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="CRTcontroller2020fall_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="CRTcontroller2020fall_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="CRTcontroller2020fall.tcl"/>
-  <File Type="OPT-TIMING" Name="CRTcontroller2020fall_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="CRTcontroller2020fall_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="CRTcontroller2020fall_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="CRTcontroller2020fall_reports.tcl"/>
-  <File Type="OPT-DRC" Name="CRTcontroller2020fall_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="CRTcontroller2020fall.hwdef"/>
-  <File Type="PWROPT-DCP" Name="CRTcontroller2020fall_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="CRTcontroller2020fall_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="CRTcontroller2020fall_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="CRTcontroller2020fall_placed.dcp"/>
-  <File Type="PLACE-IO" Name="CRTcontroller2020fall_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="CRTcontroller2020fall_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="CRTcontroller2020fall_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="CRTcontroller2020fall_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="CRTcontroller2020fall_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="CRTcontroller2020fall_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="CRTcontroller2020fall_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="CRTcontroller2020fall_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="CRTcontroller2020fall_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="CRTcontroller2020fall.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="CRTcontroller2020fall_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="CRTcontroller2020fall_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="CRTcontroller2020fall_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="CRTcontroller2020fall.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="CRTcontroller2020fall_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="CRTcontroller2020fall_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="CRTcontroller2020fall_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="CRTcontroller2020fall_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="CRTcontroller2020fall_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="CRTcontroller2020fall_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="CRTcontroller2020fall_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="CRTcontroller2020fall.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="CRTcontroller2020fall_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CRTcontroller2020fall_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CRTcontroller2020fall_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="CRTcontroller2020fall_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="CRTcontroller2020fall_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="CRTcontroller2020fall_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="CRTcontroller2020fall_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="CRTcontroller2020fall_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="CRTcontroller2020fall_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="CRTcontroller2020fall_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="CRTcontroller2020fall_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="CRTcontroller2020fall_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="CRTcontroller2020fall_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="CRTcontroller2020fall_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="CRTcontroller2020fall_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CRTcontroller2020fall_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CRTcontroller2020fall_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CRTcontroller2020fall_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CRTcontroller2020fall_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CRTcontroller2020fall_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CRTcontroller2020fall_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="CRTcontroller2020fall.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CRTcontroller2020fall_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="CRTcontroller2020fall.rbt"/>
-  <File Type="BITSTR-NKY" Name="CRTcontroller2020fall.nky"/>
-  <File Type="PDI-FILE" Name="CRTcontroller2020fall.pdi"/>
-  <File Type="RCFI_FILE" Name="CRTcontroller2020fall.rcfi"/>
-  <File Type="CFI_FILE" Name="CRTcontroller2020fall.cfi"/>
-  <File Type="RNPI_FILE" Name="CRTcontroller2020fall.rnpi"/>
-  <File Type="NPI_FILE" Name="CRTcontroller2020fall.npi"/>
-  <File Type="RBD_FILE" Name="CRTcontroller2020fall.rbd"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1635782926">
+  <File Type="BITSTR-BMM" Name="PongGame2020fall_template_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="PongGame2020fall_template_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="PongGame2020fall_template_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="PongGame2020fall_template_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="PongGame2020fall_template.tcl"/>
+  <File Type="OPT-TIMING" Name="PongGame2020fall_template_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="PongGame2020fall_template_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="PongGame2020fall_template_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="PongGame2020fall_template_reports.tcl"/>
+  <File Type="OPT-DRC" Name="PongGame2020fall_template_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="PongGame2020fall_template.hwdef"/>
+  <File Type="PWROPT-DCP" Name="PongGame2020fall_template_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="PongGame2020fall_template_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="PongGame2020fall_template_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="PongGame2020fall_template_placed.dcp"/>
+  <File Type="PLACE-IO" Name="PongGame2020fall_template_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="PongGame2020fall_template_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="PongGame2020fall_template_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="PongGame2020fall_template_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="PongGame2020fall_template_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="PongGame2020fall_template_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="PongGame2020fall_template_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="PongGame2020fall_template_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="PongGame2020fall_template_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="PongGame2020fall_template.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="PongGame2020fall_template_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="PongGame2020fall_template_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="PongGame2020fall_template_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="PongGame2020fall_template.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="PongGame2020fall_template_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="PongGame2020fall_template_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="PongGame2020fall_template_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="PongGame2020fall_template_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="PongGame2020fall_template_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="PongGame2020fall_template_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="PongGame2020fall_template_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="PongGame2020fall_template.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="PongGame2020fall_template_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PongGame2020fall_template_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PongGame2020fall_template_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="PongGame2020fall_template_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="PongGame2020fall_template_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="PongGame2020fall_template_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="PongGame2020fall_template_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="PongGame2020fall_template_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="PongGame2020fall_template_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="PongGame2020fall_template_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="PongGame2020fall_template_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="PongGame2020fall_template_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="PongGame2020fall_template_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="PongGame2020fall_template_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PongGame2020fall_template_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PongGame2020fall_template_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="PongGame2020fall_template_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="PongGame2020fall_template_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PongGame2020fall_template_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="PongGame2020fall_template_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="PongGame2020fall_template_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="PongGame2020fall_template.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="PongGame2020fall_template_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="PongGame2020fall_template.rbt"/>
+  <File Type="BITSTR-NKY" Name="PongGame2020fall_template.nky"/>
+  <File Type="PDI-FILE" Name="PongGame2020fall_template.pdi"/>
+  <File Type="RCFI_FILE" Name="PongGame2020fall_template.rcfi"/>
+  <File Type="CFI_FILE" Name="PongGame2020fall_template.cfi"/>
+  <File Type="RNPI_FILE" Name="PongGame2020fall_template.rnpi"/>
+  <File Type="NPI_FILE" Name="PongGame2020fall_template.npi"/>
+  <File Type="RBD_FILE" Name="PongGame2020fall_template.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="CRTcontroller2020fall.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="CRTcontroller2020fall.sysdef"/>
-  <File Type="BG-BGN" Name="CRTcontroller2020fall.bgn"/>
-  <File Type="BG-DRC" Name="CRTcontroller2020fall.drc"/>
-  <File Type="RDI-RDI" Name="CRTcontroller2020fall.vdi"/>
+  <File Type="BITSTR-LTX" Name="PongGame2020fall_template.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="PongGame2020fall_template.sysdef"/>
+  <File Type="BG-BGN" Name="PongGame2020fall_template.bgn"/>
+  <File Type="BG-DRC" Name="PongGame2020fall_template.drc"/>
+  <File Type="RDI-RDI" Name="PongGame2020fall_template.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -86,9 +86,27 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/ClockedNegativeOneShot.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/ClockedNegativeOneShot.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/Game2020fall.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/Game2020fall.v"/>
         <Attr Name="ImportTime" Val="1635186762"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -122,9 +140,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v">
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/PongGame2020fall_template.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/PongGame2020fall_template.v"/>
         <Attr Name="ImportTime" Val="1635186762"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -135,26 +153,6 @@
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/OriginalPong.v"/>
-        <Attr Name="ImportTime" Val="1635186762"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/Game2020fall.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/Game2020fall.v"/>
-        <Attr Name="ImportTime" Val="1635186762"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/PongGame2020fall_template.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/PongGame2020fall_template.v"/>
         <Attr Name="ImportTime" Val="1635186762"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -173,7 +171,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="CRTcontroller2020fall"/>
+      <Option Name="TopModule" Val="PongGame2020fall_template"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

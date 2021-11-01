@@ -1,7 +1,7 @@
-Running: xsim.dir/hsyncModule2020fall_tb_behav/xsimk.exe -simmode gui -wdb hsyncModule2020fall_tb_behav.wdb -simrunnum 0 -socket 54432
+Running: xsim.dir/hsyncModule2020fall_tb_behav/xsimk.exe -simmode gui -wdb hsyncModule2020fall_tb_behav.wdb -simrunnum 0 -socket 57500
 Design successfully loaded
-Design Loading Memory Usage: 6812 KB (Peak: 6812 KB)
-Design Loading CPU Usage: 62 ms
+Design Loading Memory Usage: 6416 KB (Peak: 6416 KB)
+Design Loading CPU Usage: 78 ms
 Simulation completed
-Simulation Memory Usage: 7508 KB (Peak: 7508 KB)
-Simulation CPU Usage: 62 ms
+Simulation Memory Usage: 7104 KB (Peak: 7104 KB)
+Simulation CPU Usage: 78 ms

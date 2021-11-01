@@ -27,10 +27,12 @@
   <File Type="ROUTE-DRC" Name="pong_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="pong_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="pong_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="pong.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="pong_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="pong.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pong_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="pong_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="pong.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="pong_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="pong_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="pong_route_status.pb"/>
@@ -38,6 +40,7 @@
   <File Type="ROUTE-TIMING-PB" Name="pong_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="pong_timing_summary_routed.rpx"/>
   <File Type="ROUTE-CLK" Name="pong_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="pong.vdi"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="pong_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="pong_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="pong_postroute_physopt.dcp"/>
@@ -48,15 +51,12 @@
   <File Type="PDI-FILE" Name="pong.pdi"/>
   <File Type="RCFI_FILE" Name="pong.rcfi"/>
   <File Type="CFI_FILE" Name="pong.cfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RNPI_FILE" Name="pong.rnpi"/>
   <File Type="NPI_FILE" Name="pong.npi"/>
   <File Type="RBD_FILE" Name="pong.rbd"/>
-  <File Type="BITSTR-LTX" Name="pong.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="pong.sysdef"/>
   <File Type="BG-BGN" Name="pong.bgn"/>
   <File Type="BG-DRC" Name="pong.drc"/>
-  <File Type="RDI-RDI" Name="pong.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/OriginalPong.v">

@@ -45,3 +45,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports {red[3]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {red[2]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {red[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {red[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports Clock]
+set_property IOSTANDARD LVCMOS33 [get_ports Reset]

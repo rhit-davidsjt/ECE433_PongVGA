@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1635543176">
-  <File Type="PA-TCL" Name="CRTcontroller2020fall.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="CRTcontroller2020fall_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="CRTcontroller2020fall_reports.tcl"/>
-  <File Type="RDS-RDS" Name="CRTcontroller2020fall.vds"/>
-  <File Type="RDS-UTIL" Name="CRTcontroller2020fall_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="CRTcontroller2020fall_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="CRTcontroller2020fall.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="CRTcontroller2020fall_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="CRTcontroller2020fall_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1635782926">
+  <File Type="PA-TCL" Name="PongGame2020fall_template.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="PongGame2020fall_template_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="PongGame2020fall_template_reports.tcl"/>
+  <File Type="RDS-RDS" Name="PongGame2020fall_template.vds"/>
+  <File Type="RDS-UTIL" Name="PongGame2020fall_template_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="PongGame2020fall_template_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="PongGame2020fall_template.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="PongGame2020fall_template_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="PongGame2020fall_template_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTClock2020Template.v">
@@ -20,9 +20,27 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/ClockedNegativeOneShot.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/ClockedNegativeOneShot.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/Game2020fall.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/Game2020fall.v"/>
         <Attr Name="ImportTime" Val="1635186762"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -56,9 +74,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v">
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/PongGame2020fall_template.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/PongGame2020fall_template.v"/>
         <Attr Name="ImportTime" Val="1635186762"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -69,26 +87,6 @@
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/OriginalPong.v"/>
-        <Attr Name="ImportTime" Val="1635186762"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/Game2020fall.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/Game2020fall.v"/>
-        <Attr Name="ImportTime" Val="1635186762"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/PongGame2020fall_template.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/PongGame2020fall_template.v"/>
         <Attr Name="ImportTime" Val="1635186762"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -107,7 +105,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="CRTcontroller2020fall"/>
+      <Option Name="TopModule" Val="PongGame2020fall_template"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
