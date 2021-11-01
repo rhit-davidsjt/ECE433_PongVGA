@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log PongGame2020fall_template.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source PongGame2020fall_template.tcl -notrace
+EAStep vivado -log CRTcontroller2020fall.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source CRTcontroller2020fall.tcl -notrace
 
 

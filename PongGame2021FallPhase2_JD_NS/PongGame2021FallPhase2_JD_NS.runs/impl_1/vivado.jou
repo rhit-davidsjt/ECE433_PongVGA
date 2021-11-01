@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Nov  1 12:10:11 2021
-# Process ID: 24556
+# Start of session at: Mon Nov  1 12:45:25 2021
+# Process ID: 28472
 # Current directory: C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.runs/impl_1
-# Command line: vivado.exe -log PongGame2020fall_template.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PongGame2020fall_template.tcl -notrace
-# Log file: C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.runs/impl_1/PongGame2020fall_template.vdi
+# Command line: vivado.exe -log CRTcontroller2020fall.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source CRTcontroller2020fall.tcl -notrace
+# Log file: C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.runs/impl_1/CRTcontroller2020fall.vdi
 # Journal file: C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source PongGame2020fall_template.tcl -notrace
+source CRTcontroller2020fall.tcl -notrace

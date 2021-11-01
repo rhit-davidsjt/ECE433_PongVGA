@@ -27,8 +27,7 @@ parameter [9:0] SystemClock=10'd100, CRTClock=10'd25; //MHz
 //input [SystemClockSize-1:0] SystemClockFreq, CRTClockFreq, input [ResolutionSize-1:0] Xresolution, Yresolution,
 //input reset, clock, output hsync, vsync, output [ResolutionSize-1:0] xpos, ypos);
 
-CRTcontroller2020fall VGAdisplay(SystemClock, CRTClock, 
-     NumberofPixels, NumberofLines, Reset, Clock, hsync, vsync, xpos, ypos);
+CRTcontroller2020fall VGAdisplay(SystemClock, CRTClock, NumberofPixels, NumberofLines, Reset, Clock, hsync, vsync, xpos, ypos);
 	  
 //module game2020fall(input clk25, rota, rotb, input [9:0] xpos, ypos,
 //output [3:0] red, green, blue);
