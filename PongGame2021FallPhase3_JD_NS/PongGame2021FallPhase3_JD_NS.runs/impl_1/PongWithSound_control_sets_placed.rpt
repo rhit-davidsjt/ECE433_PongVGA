@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Nov  2 12:35:57 2021
+| Date         : Tue Nov  2 14:20:54 2021
 | Host         : snownp-stg4 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file PongWithSound_control_sets_placed.rpt
 | Design       : PongWithSound
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              20 |           14 |
+| No           | No                    | No                     |              20 |           10 |
 | No           | No                    | Yes                    |              42 |           14 |
-| No           | Yes                   | No                     |              35 |           11 |
+| No           | Yes                   | No                     |              35 |           12 |
 | Yes          | No                    | No                     |              20 |            5 |
-| Yes          | No                    | Yes                    |              29 |           12 |
+| Yes          | No                    | Yes                    |              29 |           11 |
 | Yes          | Yes                   | No                     |              85 |           23 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -74,21 +74,21 @@ Table of Contents
 |                  Clock Signal                  |                 Enable Signal                |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
 +------------------------------------------------+----------------------------------------------+-----------------------------------------------+------------------+----------------+
 |  VGAdisplay/CRTclockUnit/pixelClockCounter/O52 |                                              |                                               |                1 |              1 |
-|  soundUnit/clockUnit/inst/Clock50MHz           |                                              |                                               |                3 |              3 |
+|  soundUnit/clockUnit/inst/Clock50MHz           |                                              |                                               |                2 |              3 |
 |  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/PlayNoteUnit/Timer/E[0]            | Reset_IBUF                                    |                1 |              4 |
 |  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/Sheet/VGAdisplay/p_1_in[9]         |                                               |                1 |              4 |
-|  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/Sheet/E[0]                         | Reset_IBUF                                    |                2 |              5 |
+|  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/Sheet/E[0]                         | Reset_IBUF                                    |                1 |              5 |
 |  Clock_IBUF_BUFG                               | gameUnit/missTimer                           | gameUnit/missTimer[5]_i_1_n_0                 |                2 |              6 |
 |  Clock_IBUF_BUFG                               | gameUnit/leftpaddlePosition                  |                                               |                2 |              8 |
 |  Clock_IBUF_BUFG                               | gameUnit/rightpaddlePosition                 |                                               |                2 |              8 |
 |  Clock_IBUF_BUFG                               | VGAdisplay/hsyncModule/PixelClockUnit/E[0]   | Reset_IBUF                                    |                5 |             10 |
 |  Clock_IBUF_BUFG                               | VGAdisplay/vsyncUnit/LineEndOneShotUnit/E[0] | Reset_IBUF                                    |                4 |             10 |
-|  Clock_IBUF_BUFG                               |                                              | Reset_IBUF                                    |                5 |             14 |
-|  Clock_IBUF_BUFG                               |                                              |                                               |               10 |             16 |
-|  Clock_IBUF_BUFG                               | VGAdisplay/vsyncUnit/YPositionCounter/E[0]   | gameUnit/ballXdir11_out                       |                6 |             19 |
+|  Clock_IBUF_BUFG                               |                                              | Reset_IBUF                                    |                6 |             14 |
+|  Clock_IBUF_BUFG                               |                                              |                                               |                7 |             16 |
+|  Clock_IBUF_BUFG                               | VGAdisplay/vsyncUnit/YPositionCounter/E[0]   | gameUnit/ballXdir8_out                        |                6 |             19 |
 |  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/NoteUnit/UnitInput/sel0__0[0]      | soundUnit/NoteUnit/UnitInput/NoteD_reg[0]_0   |                5 |             20 |
-|  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/NoteUnit/UnitInput/sel0[0]         | soundUnit/NoteUnit/UnitInput/NoteC_reg[2]_0   |                5 |             20 |
 |  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/NoteUnit/UnitInput/sel0__1[0]      | soundUnit/NoteUnit/UnitInput/NoteE_reg[0]_0   |                5 |             20 |
+|  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/NoteUnit/UnitInput/sel0[0]         | soundUnit/NoteUnit/UnitInput/NoteC_reg[2]_0   |                5 |             20 |
 |  soundUnit/clockUnit/inst/Clock50MHz           |                                              | soundUnit/PlayDebounce/Timer/count[0]_i_1_n_0 |                7 |             27 |
 |  soundUnit/clockUnit/inst/Clock50MHz           |                                              | Reset_IBUF                                    |               13 |             36 |
 +------------------------------------------------+----------------------------------------------+-----------------------------------------------+------------------+----------------+

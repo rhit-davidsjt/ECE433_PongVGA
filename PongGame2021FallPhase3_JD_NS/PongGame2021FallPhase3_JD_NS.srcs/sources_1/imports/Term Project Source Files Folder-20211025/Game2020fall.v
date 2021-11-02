@@ -22,7 +22,7 @@ always @(posedge clk25)
 if(leftquadAr[2] ^ leftquadAr[1] ^ leftquadBr[2] ^ leftquadBr[1])
 begin
 	if(leftquadAr[2] ^ leftquadBr[1]) begin
-		if(leftpaddlePosition < 508)        // make sure the value doesn't overflow
+		if(leftpaddlePosition < 352)        // make sure the value doesn't overflow
 			leftpaddlePosition <= leftpaddlePosition + 4;
 	end
 	else begin
@@ -41,12 +41,12 @@ always @(posedge clk25)
 if(rightquadAr[2] ^ rightquadAr[1] ^ rightquadBr[2] ^ rightquadBr[1])
 begin
 	if(rightquadAr[2] ^ rightquadBr[1]) begin
-		if(rightpaddlePosition < 508)        // make sure the value doesn't overflow
-			rightpaddlePosition <= rightpaddlePosition + 4;
-	end
-	else begin
 		if(rightpaddlePosition > 3)        // make sure the value doesn't underflow
 			rightpaddlePosition <= rightpaddlePosition - 4;
+	end
+	else begin
+	   if(rightpaddlePosition < 352)        // make sure the value doesn't overflow
+			rightpaddlePosition <= rightpaddlePosition + 4;
 	end
 end
 		
@@ -83,22 +83,22 @@ end
 		
 // pixel color
 //Resolution is 640 x 480	
+// 799 x 520 is the actual range
 reg [5:0] missTimer;	
 wire visible = (xpos < 640 && ypos < 480);
 wire top = (visible && ypos <= 5);
 wire bottom = (visible && ypos >= 475);
 wire left = (visible && xpos <= 5);
 wire right = (visible && xpos >= 635);
-wire border = (visible && (left || right || top));
+wire border = (visible && (bottom || top));
 
-//wire leftpaddle = (xpos >= leftpaddlePosition+4 && xpos <= leftpaddlePosition+124 && ypos >= 438 && ypos <= 445);
-//wire rightpaddle = (xpos >= rightpaddlePosition+4 && xpos <= rightpaddlePosition+124 && ypos >= 431 && ypos <= 438);
+
 
 wire leftpaddle = (ypos >= leftpaddlePosition+4 && ypos <= leftpaddlePosition+124 && xpos >= 10 && xpos <= 15);
 wire rightpaddle = (ypos >= rightpaddlePosition+4 && ypos <= rightpaddlePosition+124 && xpos >= 625 && xpos <= 630);
 
 wire ball = (xpos >= ballX && xpos <= ballX+7 && ypos >= ballY && ypos <= ballY+7);
-wire background = (visible && !(border || leftpaddle || ball));
+wire background = (visible && !(border || leftpaddle || rightpaddle || ball));
 wire checkerboard = (xpos[5] ^ ypos[5]);
 wire missed = visible && missTimer != 0;
 
@@ -109,11 +109,11 @@ assign blue  = { !missed && (border || ball), background && checkerboard, backgr
 // ball collision	
 always @(posedge clk25) begin
 	if (!endOfFrame) begin
-		if (ball && (left || right))
+		if (ball && (left || right  || (leftpaddle && !ballXdir) || (rightpaddle && ballXdir)))
 			bounceX <= 1;
-		if (ball && (top || bottom || (leftpaddle && ballYdir) || (rightpaddle && ballYdir)))
+		if (ball && (top || bottom))
 			bounceY <= 1;
-		if (ball && bottom)
+		if (ball && (left || right))
 			missTimer <= 63;
 	end
 	else begin
