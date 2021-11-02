@@ -12,7 +12,7 @@
 //based on pong from http://www.bigmessowires.com/2009/06/21/fpga-pong/. 
 
 module PongWithSound(
-    input rotaLeft, rotbLeft, rotaRight, rotbRight, Reset, Clock, playAgainButton,
+    input rotaLeft, rotbLeft, rotaRight, rotbRight, Reset, Clock, playAgainButton, muteSwitch,
     output [3:0] red, green, blue,
     output hsync, vsync, Speaker
     );
@@ -33,10 +33,10 @@ CRTcontroller2020fall VGAdisplay(SystemClock, CRTClock, NumberofPixels, Numberof
 //output [3:0] red, green, blue);
 
 ////change the game module to add your name initials	
-GamewithSound gameUnit(Clock, rotaLeft, rotbLeft, rotaRight, rotbRight, xpos, ypos, red, green, blue);
+GamewithSound gameUnit(Clock, rotaLeft, rotbLeft, rotaRight, rotbRight, playAgainButton, muteSwitch, Reset, xpos, ypos, red, green, blue, Speaker);
 
 
 //Play Sound Module
-PlaySoundNexysA7 soundUnit(playAgainButton, Speaker, Reset, Clock);
+//PlaySoundNexysA7 soundUnit(playAgainButton, Speaker, Reset, Clock);
 					
 endmodule

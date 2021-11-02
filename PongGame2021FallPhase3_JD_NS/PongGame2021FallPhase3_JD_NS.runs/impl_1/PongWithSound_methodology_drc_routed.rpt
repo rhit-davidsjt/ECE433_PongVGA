@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Nov  2 14:21:33 2021
+| Date         : Tue Nov  2 15:46:24 2021
 | Host         : snownp-stg4 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file PongWithSound_methodology_drc_routed.rpt -pb PongWithSound_methodology_drc_routed.pb -rpx PongWithSound_methodology_drc_routed.rpx
 | Design       : PongWithSound
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 96
+             Violations found: 97
 +-----------+------------------+-------------------------------------------+------------+
 | Rule      | Severity         | Description                               | Violations |
 +-----------+------------------+-------------------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell               | 92         |
 | TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin | 1          |
-| TIMING-18 | Warning          | Missing input or output delay             | 3          |
+| TIMING-18 | Warning          | Missing input or output delay             | 4          |
 +-----------+------------------+-------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -496,22 +496,27 @@ Related violations: <none>
 
 TIMING-27#1 Critical Warning
 Invalid primary clock on hierarchical pin  
-A primary clock soundUnit/clockUnit/inst/Clock100MHz is created on an inappropriate internal pin soundUnit/clockUnit/inst/Clock100MHz. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+A primary clock gameUnit/soundUnit/clockUnit/inst/Clock100MHz is created on an inappropriate internal pin gameUnit/soundUnit/clockUnit/inst/Clock100MHz. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
 Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on Reset relative to clock(s) soundUnit/clockUnit/inst/Clock100MHz
+An input delay is missing on Reset relative to clock(s) gameUnit/soundUnit/clockUnit/inst/Clock100MHz
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on playAgainButton relative to clock(s) soundUnit/clockUnit/inst/Clock100MHz
+An input delay is missing on muteSwitch relative to clock(s) gameUnit/soundUnit/clockUnit/inst/Clock100MHz
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on Speaker relative to clock(s) soundUnit/clockUnit/inst/Clock100MHz
+An input delay is missing on playAgainButton relative to clock(s) gameUnit/soundUnit/clockUnit/inst/Clock100MHz
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on Speaker relative to clock(s) gameUnit/soundUnit/clockUnit/inst/Clock100MHz
 Related violations: <none>
 
 

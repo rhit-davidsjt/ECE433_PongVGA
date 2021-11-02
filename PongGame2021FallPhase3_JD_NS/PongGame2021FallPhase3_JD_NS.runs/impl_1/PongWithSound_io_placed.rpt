@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date                      : Tue Nov  2 14:20:54 2021
+| Date                      : Tue Nov  2 15:45:46 2021
 | Host                      : snownp-stg4 running 64-bit major release  (build 9200)
 | Command                   : report_io -file PongWithSound_io_placed.rpt
 | Design                    : PongWithSound
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            22 |
+|            23 |
 +---------------+
 
 
@@ -350,7 +350,7 @@ Table of Contents
 | V7         |                 | High Range | IO_L20P_T3_34                | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V8         |                 | High Range | VCCO_34                      | VCCO        |             |      34 |            |      |                     |                      |   any** |            |           |          |      |                  |              |                   |              |
 | V9         |                 | High Range | IO_L21N_T3_DQS_34            | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| V10        |                 | High Range | IO_L21P_T3_DQS_14            | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| V10        | muteSwitch      | High Range | IO_L21P_T3_DQS_14            | INPUT       | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | V11        |                 | High Range | IO_L21N_T3_DQS_A06_D22_14    | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V12        |                 | High Range | IO_L20N_T3_A07_D23_14        | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V13        |                 |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |

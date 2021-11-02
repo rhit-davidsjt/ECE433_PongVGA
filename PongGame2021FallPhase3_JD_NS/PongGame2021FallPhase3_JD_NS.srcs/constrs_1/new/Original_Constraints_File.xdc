@@ -55,3 +55,6 @@ set_property PACKAGE_PIN G16 [get_ports rotaRight]
 set_property PACKAGE_PIN H14 [get_ports rotbRight]
 set_property PACKAGE_PIN J2 [get_ports rotaLeft]
 set_property PACKAGE_PIN G6 [get_ports rotbLeft]
+
+set_property PACKAGE_PIN V10 [get_ports muteSwitch]
+set_property IOSTANDARD LVCMOS33 [get_ports muteSwitch]

@@ -9,16 +9,17 @@
 // -----------------------------------------------
 //change the game module to add your name initials	
 
-module GamewithSound(input clk25, rotaLeft, rotbLeft, rotaRight, rotbRight, input [9:0] xpos, ypos,
-output [3:0] red, green, blue);
+module GamewithSound(input Clock100MHZ, rotaLeft, rotbLeft, rotaRight, rotbRight, playAgainButton, muteSwitch, Reset, input [9:0] xpos, ypos,
+output [3:0] red, green, blue, 
+output Speaker);
 		
 // Left paddle movement		
 reg [8:0] leftpaddlePosition;
 reg [2:0] leftquadAr, leftquadBr;
-always @(posedge clk25) leftquadAr <= {leftquadAr[1:0], rotaLeft};
-always @(posedge clk25) leftquadBr <= {leftquadBr[1:0], rotbLeft};
+always @(posedge Clock100MHZ) leftquadAr <= {leftquadAr[1:0], rotaLeft};
+always @(posedge Clock100MHZ) leftquadBr <= {leftquadBr[1:0], rotbLeft};
 
-always @(posedge clk25)
+always @(posedge Clock100MHZ)
 if(leftquadAr[2] ^ leftquadAr[1] ^ leftquadBr[2] ^ leftquadBr[1])
 begin
 	if(leftquadAr[2] ^ leftquadBr[1]) begin
@@ -34,10 +35,10 @@ end
 // Right paddle movement		
 reg [8:0] rightpaddlePosition;
 reg [2:0] rightquadAr, rightquadBr;
-always @(posedge clk25) rightquadAr <= {rightquadAr[1:0], rotaRight};
-always @(posedge clk25) rightquadBr <= {rightquadBr[1:0], rotbRight};
+always @(posedge Clock100MHZ) rightquadAr <= {rightquadAr[1:0], rotaRight};
+always @(posedge Clock100MHZ) rightquadBr <= {rightquadBr[1:0], rotbRight};
 
-always @(posedge clk25)
+always @(posedge Clock100MHZ)
 if(rightquadAr[2] ^ rightquadAr[1] ^ rightquadBr[2] ^ rightquadBr[1])
 begin
 	if(rightquadAr[2] ^ rightquadBr[1]) begin
@@ -61,7 +62,7 @@ reg bounceX, bounceY;
 	
 wire endOfFrame = (xpos == 0 && ypos == 480);
 	
-always @(posedge clk25) begin
+always @(posedge Clock100MHZ) begin
 	if (endOfFrame) begin // update ball position at end of each frame
 		if (ballX == 0 && ballY == 0) begin // cheesy reset handling, assumes initial value of 0
 			ballX <= 480;
@@ -107,7 +108,7 @@ assign green = { !missed && (border || leftpaddle || rightpaddle || ball), 3'b00
 assign blue  = { !missed && (border || ball), background && checkerboard, background && !checkerboard, background && !checkerboard  }; 
 		
 // ball collision	
-always @(posedge clk25) begin
+always @(posedge Clock100MHZ) begin
 	if (!endOfFrame) begin
 		if (ball && (left || right  || (leftpaddle && !ballXdir) || (rightpaddle && ballXdir)))
 			bounceX <= 1;
@@ -135,5 +136,19 @@ always @(posedge clk25) begin
 		end
 	end
 end
-		
+
+//Setup of the Game Sounds
+wire hitWallSound = ball && (top || bottom);
+wire hitPaddleSound = ball&&leftpaddle || ball&&rightpaddle;
+wire missSound = missed;
+
+reg [7:0] musicAddress;
+always @(hitWallSound, hitPaddleSound, missSound)begin
+musicAddress <= 1;
+musicAddress <= 2;
+musicAddress <= 3;
+end
+
+PlaySoundNexysA7 soundUnit(playAgainButton || ((missSound || hitPaddleSound || hitWallSound) && ~muteSwitch), Reset, Clock100MHZ, musicAddress, Speaker);
+
 endmodule

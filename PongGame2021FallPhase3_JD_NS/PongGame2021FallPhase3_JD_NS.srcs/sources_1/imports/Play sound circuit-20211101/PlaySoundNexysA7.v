@@ -5,19 +5,19 @@
 //Play a music score stored in the RAM in MusicSheet.v
 //PlayAgain - play the score stored in MusicSheet when a positive pulse appears on PlayAgain
 
-module PlaySoundNexysA7(PlayAgain, Speaker, Reset, Clock100MHz);
-input PlayAgain, Reset, Clock100MHz;
-output Speaker;
+module PlaySoundNexysA7(
+input PlayAgain, Reset, Clock100MHz, input [7:0] musicAddress,
+output Speaker);
 
 wire Clock;
 
 Clk50MHz clockUnit(.Clock100MHz(Clock100MHz), .Clock50MHz(Clock));
 
-parameter AddressBits=5;
+parameter AddressBits=8;
 parameter DataLength=4;
 wire [2:0] NoteArray;	//three notes
 wire [DataLength-1:0] KeyOutput, TimeOutput;
-wire [AddressBits-1:0] ReadingAddress;
+wire [AddressBits-1:0] ReadingAddress = musicAddress;
 wire EndofScore, DebouncedPlayAgain, OneShotPlayAgain;
 
 Debouncer PlayDebounce(PlayAgain, DebouncedPlayAgain, Reset, Clock);

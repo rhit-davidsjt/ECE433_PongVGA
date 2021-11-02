@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Nov  2 14:20:54 2021
+| Date         : Tue Nov  2 15:45:46 2021
 | Host         : snownp-stg4 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file PongWithSound_control_sets_placed.rpt
 | Design       : PongWithSound
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    18 |
-|    Minimum number of control sets                        |    18 |
+| Total control sets                                       |    14 |
+|    Minimum number of control sets                        |    14 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    65 |
+| Unused register locations in slices containing registers |    54 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    18 |
+| Total control sets |    14 |
 | >= 0 to < 4        |     2 |
-| >= 4 to < 6        |     3 |
+| >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     2 |
 | >= 10 to < 12      |     2 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     1 |
-| >= 16              |     7 |
+| >= 16              |     5 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,39 +58,35 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              20 |           10 |
-| No           | No                    | Yes                    |              42 |           14 |
-| No           | Yes                   | No                     |              35 |           12 |
-| Yes          | No                    | No                     |              20 |            5 |
-| Yes          | No                    | Yes                    |              29 |           11 |
-| Yes          | Yes                   | No                     |              85 |           23 |
+| No           | No                    | No                     |              18 |           13 |
+| No           | No                    | Yes                    |              40 |           11 |
+| No           | Yes                   | No                     |              35 |           11 |
+| Yes          | No                    | No                     |              16 |            4 |
+| Yes          | No                    | Yes                    |              24 |            9 |
+| Yes          | Yes                   | No                     |              45 |           13 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------------------+----------------------------------------------+-----------------------------------------------+------------------+----------------+
-|                  Clock Signal                  |                 Enable Signal                |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
-+------------------------------------------------+----------------------------------------------+-----------------------------------------------+------------------+----------------+
-|  VGAdisplay/CRTclockUnit/pixelClockCounter/O52 |                                              |                                               |                1 |              1 |
-|  soundUnit/clockUnit/inst/Clock50MHz           |                                              |                                               |                2 |              3 |
-|  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/PlayNoteUnit/Timer/E[0]            | Reset_IBUF                                    |                1 |              4 |
-|  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/Sheet/VGAdisplay/p_1_in[9]         |                                               |                1 |              4 |
-|  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/Sheet/E[0]                         | Reset_IBUF                                    |                1 |              5 |
-|  Clock_IBUF_BUFG                               | gameUnit/missTimer                           | gameUnit/missTimer[5]_i_1_n_0                 |                2 |              6 |
-|  Clock_IBUF_BUFG                               | gameUnit/leftpaddlePosition                  |                                               |                2 |              8 |
-|  Clock_IBUF_BUFG                               | gameUnit/rightpaddlePosition                 |                                               |                2 |              8 |
-|  Clock_IBUF_BUFG                               | VGAdisplay/hsyncModule/PixelClockUnit/E[0]   | Reset_IBUF                                    |                5 |             10 |
-|  Clock_IBUF_BUFG                               | VGAdisplay/vsyncUnit/LineEndOneShotUnit/E[0] | Reset_IBUF                                    |                4 |             10 |
-|  Clock_IBUF_BUFG                               |                                              | Reset_IBUF                                    |                6 |             14 |
-|  Clock_IBUF_BUFG                               |                                              |                                               |                7 |             16 |
-|  Clock_IBUF_BUFG                               | VGAdisplay/vsyncUnit/YPositionCounter/E[0]   | gameUnit/ballXdir8_out                        |                6 |             19 |
-|  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/NoteUnit/UnitInput/sel0__0[0]      | soundUnit/NoteUnit/UnitInput/NoteD_reg[0]_0   |                5 |             20 |
-|  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/NoteUnit/UnitInput/sel0__1[0]      | soundUnit/NoteUnit/UnitInput/NoteE_reg[0]_0   |                5 |             20 |
-|  soundUnit/clockUnit/inst/Clock50MHz           | soundUnit/NoteUnit/UnitInput/sel0[0]         | soundUnit/NoteUnit/UnitInput/NoteC_reg[2]_0   |                5 |             20 |
-|  soundUnit/clockUnit/inst/Clock50MHz           |                                              | soundUnit/PlayDebounce/Timer/count[0]_i_1_n_0 |                7 |             27 |
-|  soundUnit/clockUnit/inst/Clock50MHz           |                                              | Reset_IBUF                                    |               13 |             36 |
-+------------------------------------------------+----------------------------------------------+-----------------------------------------------+------------------+----------------+
++------------------------------------------------+--------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|                  Clock Signal                  |                   Enable Signal                  |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++------------------------------------------------+--------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  VGAdisplay/CRTclockUnit/pixelClockCounter/O47 |                                                  |                                                        |                1 |              1 |
+|  gameUnit/soundUnit/clockUnit/inst/Clock50MHz  |                                                  |                                                        |                1 |              1 |
+|  gameUnit/soundUnit/clockUnit/inst/Clock50MHz  | gameUnit/soundUnit/PlayNoteUnit/Timer/E[0]       | Reset_IBUF                                             |                1 |              4 |
+|  Clock_IBUF_BUFG                               | gameUnit/missTimer                               | VGAdisplay/hsyncModule/XPositionCounter/SS[0]          |                2 |              6 |
+|  Clock_IBUF_BUFG                               | gameUnit/rightpaddlePosition                     |                                                        |                2 |              8 |
+|  Clock_IBUF_BUFG                               | gameUnit/leftpaddlePosition                      |                                                        |                2 |              8 |
+|  Clock_IBUF_BUFG                               | VGAdisplay/hsyncModule/PixelClockUnit/E[0]       | Reset_IBUF                                             |                4 |             10 |
+|  Clock_IBUF_BUFG                               | VGAdisplay/vsyncUnit/LineEndOneShotUnit/E[0]     | Reset_IBUF                                             |                4 |             10 |
+|  Clock_IBUF_BUFG                               |                                                  | Reset_IBUF                                             |                4 |             14 |
+|  Clock_IBUF_BUFG                               |                                                  |                                                        |               11 |             16 |
+|  Clock_IBUF_BUFG                               | VGAdisplay/hsyncModule/XPositionCounter/E[0]     | gameUnit/ballXdir8_out                                 |                6 |             19 |
+|  gameUnit/soundUnit/clockUnit/inst/Clock50MHz  | gameUnit/soundUnit/NoteUnit/UnitInput/sel0__1[0] | gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[0]_0   |                5 |             20 |
+|  gameUnit/soundUnit/clockUnit/inst/Clock50MHz  |                                                  | gameUnit/soundUnit/PlayDebounce/Timer/count[0]_i_1_n_0 |                7 |             27 |
+|  gameUnit/soundUnit/clockUnit/inst/Clock50MHz  |                                                  | Reset_IBUF                                             |               11 |             34 |
++------------------------------------------------+--------------------------------------------------+--------------------------------------------------------+------------------+----------------+
 
 

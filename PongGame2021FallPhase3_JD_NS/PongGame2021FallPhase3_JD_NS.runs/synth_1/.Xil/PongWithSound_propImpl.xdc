@@ -43,3 +43,5 @@ set_property src_info {type:XDC file:1 line:56 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN J2 [get_ports rotaLeft]
 set_property src_info {type:XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G6 [get_ports rotbLeft]
+set_property src_info {type:XDC file:1 line:59 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V10 [get_ports muteSwitch]
