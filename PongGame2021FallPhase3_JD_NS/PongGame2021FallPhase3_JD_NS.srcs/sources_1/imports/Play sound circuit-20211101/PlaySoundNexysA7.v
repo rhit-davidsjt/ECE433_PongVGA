@@ -17,15 +17,16 @@ parameter AddressBits=8;
 parameter DataLength=4;
 wire [2:0] NoteArray;	//three notes
 wire [DataLength-1:0] KeyOutput, TimeOutput;
-wire [AddressBits-1:0] ReadingAddress = musicAddress;
+wire [AddressBits-1:0] ReadingAddress;
 wire EndofScore, DebouncedPlayAgain, OneShotPlayAgain;
+wire [AddressBits-1:0] SoundStartingAddress = musicAddress;
 
 Debouncer PlayDebounce(PlayAgain, DebouncedPlayAgain, Reset, Clock);
 ClockedOneShot PlayOneShot(DebouncedPlayAgain, OneShotPlayAgain, Reset, Clock);
 
 //module MusicSheetReader(Start, EndofScore, StartAddress, KeyOutput, TimeOutput, CurrentAddress, EndofNote, Clock, Reset);
 
-MusicSheetReader Reader(OneShotPlayAgain, EndofScore, 5'd0 , KeyOutput, ReadingAddress, Over, Clock, Reset);
+MusicSheetReader Reader(OneShotPlayAgain, EndofScore, SoundStartingAddress , KeyOutput, ReadingAddress, Over, Clock, Reset);
 
 //module MusicScore(ReadOrWrite, Address, KeyInput, KeyOutput, TimeInput, TimeOutput,Clock, Reset);
 MusicScore Sheet(1'b1,ReadingAddress, 4'd0, KeyOutput, 4'd0, TimeOutput,Clock, Reset);

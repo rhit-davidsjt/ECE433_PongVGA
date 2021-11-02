@@ -10,7 +10,7 @@ input Clock, Reset, Start;
 output EndofScore;
 parameter DataLength=4;
 input [DataLength-1:0] KeyOutput;
-parameter AddressBits=5;
+parameter AddressBits=8;
 input [AddressBits-1:0] StartAddress;
 output reg [AddressBits-1:0] CurrentAddress;
 input EndofNote;

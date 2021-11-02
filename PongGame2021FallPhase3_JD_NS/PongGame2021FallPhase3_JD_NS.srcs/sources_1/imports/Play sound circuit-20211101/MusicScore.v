@@ -5,7 +5,7 @@ input ReadOrWrite, Clock, Reset;
 parameter DataLength=4;
 input [DataLength-1:0] KeyInput, TimeInput;
 output reg [DataLength-1:0] KeyOutput, TimeOutput;
-parameter AddressBits=5;
+parameter AddressBits=8;
 input [AddressBits-1:0] Address;
 parameter MemorySize=20;
 
@@ -26,6 +26,16 @@ always@(posedge Clock or posedge Reset)
 	Keys[9]<=2; Times[9]<=1;
 	Keys[10]<=1; Times[10]<=2;
 	Keys[11]<=0; Times[11]<=0;	//Key=0 is the end of sheet
+	
+	Keys[12]<=2; Times[12]<=1;
+	Keys[13]<=1; Times[13]<=1;
+	Keys[14]<=0; Times[14]<=0;	//Key=0 is the end of sheet
+	
+	Keys[15]<=1; Times[15]<=1;
+	Keys[16]<=2; Times[16]<=1;
+	Keys[17]<=0; Times[17]<=0;	//Key=0 is the end of sheet
+	
+		
 	end 
 	else if (ReadOrWrite==1) begin	//read memory
 		KeyOutput<=Keys[Address]; TimeOutput<=Times[Address];

@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Nov  2 15:44:21 2021
-# Process ID: 1608
+# Start of session at: Tue Nov  2 16:44:03 2021
+# Process ID: 29552
 # Current directory: C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.runs/synth_1
 # Command line: vivado.exe -log PongWithSound.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PongWithSound.tcl
 # Log file: C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.runs/synth_1/PongWithSound.vds
@@ -16,12 +16,12 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 24304 
+INFO: Helper process launched with PID 20112 
 WARNING: [Synth 8-2507] parameter declaration becomes local in CRTcontroller2020fall with formal parameter declaration list [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v:24]
 WARNING: [Synth 8-2507] parameter declaration becomes local in CRTcontroller2020fall with formal parameter declaration list [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v:29]
 WARNING: [Synth 8-6901] identifier 'EndCount' is used before its declaration [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall.v:23]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 802.043 ; gain = 239.738
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 802.004 ; gain = 239.922
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'PongWithSound' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/PongGame2020fall_template.v:14]
 	Parameter NumberofPixels bound to: 10'b1010000000 
@@ -63,8 +63,8 @@ INFO: [Synth 8-6157] synthesizing module 'GamewithSound' [C:/Users/snownp/ECE433
 INFO: [Synth 8-6157] synthesizing module 'PlaySoundNexysA7' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/PlaySoundNexysA7.v:8]
 	Parameter AddressBits bound to: 8 - type: integer 
 	Parameter DataLength bound to: 4 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'Clk50MHz' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.runs/synth_1/.Xil/Vivado-1608-snownp-stg4/realtime/Clk50MHz_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'Clk50MHz' (7#1) [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.runs/synth_1/.Xil/Vivado-1608-snownp-stg4/realtime/Clk50MHz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Clk50MHz' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.runs/synth_1/.Xil/Vivado-29552-snownp-stg4/realtime/Clk50MHz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Clk50MHz' (7#1) [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.runs/synth_1/.Xil/Vivado-29552-snownp-stg4/realtime/Clk50MHz_stub.v:5]
 WARNING: [Synth 8-7023] instance 'clockUnit' of module 'Clk50MHz' has 4 connections declared, but only 2 given [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/PlaySoundNexysA7.v:14]
 INFO: [Synth 8-6157] synthesizing module 'Debouncer' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/debouncer.v:9]
 	Parameter State0 bound to: 0 - type: integer 
@@ -84,33 +84,19 @@ INFO: [Synth 8-6157] synthesizing module 'ClockedOneShot' [C:/Users/snownp/ECE43
 INFO: [Synth 8-6155] done synthesizing module 'ClockedOneShot' (10#1) [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/ClockedOneShot.v:6]
 INFO: [Synth 8-6157] synthesizing module 'MusicSheetReader' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:8]
 	Parameter DataLength bound to: 4 - type: integer 
-	Parameter AddressBits bound to: 5 - type: integer 
+	Parameter AddressBits bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'MusicSheetReader' (11#1) [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:8]
-WARNING: [Synth 8-689] width (8) of port connection 'CurrentAddress' does not match port width (5) of module 'MusicSheetReader' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/PlaySoundNexysA7.v:28]
 INFO: [Synth 8-6157] synthesizing module 'MusicScore' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:3]
 	Parameter DataLength bound to: 4 - type: integer 
-	Parameter AddressBits bound to: 5 - type: integer 
+	Parameter AddressBits bound to: 8 - type: integer 
 	Parameter MemorySize bound to: 20 - type: integer 
-WARNING: [Synth 8-5788] Register Keys_reg[12] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register Keys_reg[13] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register Keys_reg[14] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register Keys_reg[15] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register Keys_reg[16] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register Keys_reg[17] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 WARNING: [Synth 8-5788] Register Keys_reg[18] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 WARNING: [Synth 8-5788] Register Keys_reg[19] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register Times_reg[12] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register Times_reg[13] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register Times_reg[14] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register Times_reg[15] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register Times_reg[16] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register Times_reg[17] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 WARNING: [Synth 8-5788] Register Times_reg[18] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 WARNING: [Synth 8-5788] Register Times_reg[19] in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-WARNING: [Synth 8-5788] Register KeyOutput_reg in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:31]
-WARNING: [Synth 8-5788] Register TimeOutput_reg in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:31]
+WARNING: [Synth 8-5788] Register KeyOutput_reg in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:41]
+WARNING: [Synth 8-5788] Register TimeOutput_reg in module MusicScore is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:41]
 INFO: [Synth 8-6155] done synthesizing module 'MusicScore' (12#1) [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:3]
-WARNING: [Synth 8-689] width (8) of port connection 'Address' does not match port width (5) of module 'MusicScore' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/PlaySoundNexysA7.v:31]
 INFO: [Synth 8-6157] synthesizing module 'PlayNote2' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/PlayNote2.v:7]
 INFO: [Synth 8-6157] synthesizing module 'OneSecElapseTime' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/OneSecElapseTime.v:9]
 	Parameter NumberOfBitsForSecond bound to: 26 - type: integer 
@@ -139,7 +125,7 @@ INFO: [Synth 8-6155] done synthesizing module 'PlaySoundNexysA7' (19#1) [C:/User
 INFO: [Synth 8-6155] done synthesizing module 'GamewithSound' (20#1) [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/Game2020fall.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'PongWithSound' (21#1) [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/PongGame2020fall_template.v:14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 854.625 ; gain = 292.320
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 854.523 ; gain = 292.441
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -152,12 +138,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 854.625 ; gain = 292.320
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 854.523 ; gain = 292.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 854.625 ; gain = 292.320
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 854.523 ; gain = 292.441
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 854.625 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 854.523 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -170,20 +156,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/PongWithSound_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 980.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 979.863 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 980.980 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 979.863 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 980.980 ; gain = 418.676
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 979.863 ; gain = 417.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 980.980 ; gain = 418.676
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 979.863 ; gain = 417.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -192,11 +178,11 @@ Applied set_property IO_BUFFER_TYPE = NONE for Clock. (constraint file  {c:/User
 Applied set_property CLOCK_BUFFER_TYPE = NONE for Clock. (constraint file  {c:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/ip/Clk50MHz/Clk50MHz/Clk50MHz_in_context.xdc}, line 4).
 Applied set_property DONT_TOUCH = true for gameUnit/soundUnit/clockUnit. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 980.980 ; gain = 418.676
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 979.863 ; gain = 417.781
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "NoteArray" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 980.980 ; gain = 418.676
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 979.863 ; gain = 417.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -215,8 +201,8 @@ Detailed RTL Component Info :
 	   4 Input     10 Bit       Adders := 1     
 	   3 Input     10 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 3     
-	   2 Input      6 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
 	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 5     
@@ -225,22 +211,24 @@ Detailed RTL Component Info :
 	               20 Bit    Registers := 3     
 	               10 Bit    Registers := 4     
 	                9 Bit    Registers := 3     
-	                6 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 43    
 	                3 Bit    Registers := 4     
 	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 11    
+	                1 Bit    Registers := 12    
 +---Muxes : 
 	   2 Input     10 Bit        Muxes := 12    
 	   4 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 2     
 	   5 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
 	   4 Input      2 Bit        Muxes := 3     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 40    
+	   2 Input      1 Bit        Muxes := 41    
 	   4 Input      1 Bit        Muxes := 8     
 	   3 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
@@ -306,12 +294,12 @@ Detailed RTL Component Info :
 Module MusicSheetReader 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      5 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
-	                5 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 Module MusicScore 
@@ -357,20 +345,22 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 6     
 	   2 Input      9 Bit       Adders := 3     
-	   2 Input      6 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 5     
 	   3 Input      1 Bit         XORs := 2     
 +---Registers : 
 	               10 Bit    Registers := 1     
 	                9 Bit    Registers := 3     
-	                6 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
 	                3 Bit    Registers := 4     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
 +---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -390,107 +380,123 @@ Warning: Parallel synthesis criteria is not met
 INFO: [Synth 8-4471] merging register 'soundUnit/Sheet/Times_reg[5][3:0]' into 'soundUnit/Sheet/Keys_reg[5][3:0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 INFO: [Synth 8-4471] merging register 'soundUnit/Sheet/Times_reg[6][3:0]' into 'soundUnit/Sheet/Keys_reg[6][3:0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 INFO: [Synth 8-4471] merging register 'soundUnit/Sheet/Times_reg[11][3:0]' into 'soundUnit/Sheet/Keys_reg[11][3:0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-INFO: [Synth 8-4471] merging register 'soundUnit/Sheet/Times_reg[12][3:0]' into 'soundUnit/Sheet/Keys_reg[12][3:0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 INFO: [Synth 8-4471] merging register 'soundUnit/Sheet/Times_reg[13][3:0]' into 'soundUnit/Sheet/Keys_reg[13][3:0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 INFO: [Synth 8-4471] merging register 'soundUnit/Sheet/Times_reg[14][3:0]' into 'soundUnit/Sheet/Keys_reg[14][3:0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 INFO: [Synth 8-4471] merging register 'soundUnit/Sheet/Times_reg[15][3:0]' into 'soundUnit/Sheet/Keys_reg[15][3:0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-INFO: [Synth 8-4471] merging register 'soundUnit/Sheet/Times_reg[16][3:0]' into 'soundUnit/Sheet/Keys_reg[16][3:0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 INFO: [Synth 8-4471] merging register 'soundUnit/Sheet/Times_reg[17][3:0]' into 'soundUnit/Sheet/Keys_reg[17][3:0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 INFO: [Synth 8-4471] merging register 'soundUnit/Sheet/Times_reg[18][3:0]' into 'soundUnit/Sheet/Keys_reg[18][3:0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
 INFO: [Synth 8-4471] merging register 'soundUnit/Sheet/Times_reg[19][3:0]' into 'soundUnit/Sheet/Keys_reg[19][3:0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v:17]
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[3][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[3][2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[3][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[3][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[3][2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[3][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[3][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[3][0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[3][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[3][2]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\gameUnit/soundUnit/Sheet/Keys_reg[3][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameUnit/soundUnit/Sheet/Keys_reg[3][2] )
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/TimeOutput_reg[3]' (FDE) to 'gameUnit/soundUnit/Sheet/TimeOutput_reg[1]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/TimeOutput_reg[0]' (FDE) to 'gameUnit/soundUnit/Sheet/KeyOutput_reg[1]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/TimeOutput_reg[1]' (FDE) to 'gameUnit/soundUnit/Sheet/TimeOutput_reg[2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/TimeOutput_reg[2]' (FDE) to 'gameUnit/soundUnit/Sheet/KeyOutput_reg[3]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/KeyOutput_reg[1]' (FDE) to 'gameUnit/soundUnit/Sheet/KeyOutput_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/KeyOutput_reg[3]' (FDE) to 'gameUnit/soundUnit/Sheet/KeyOutput_reg[2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[18]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[19]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[17]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[16]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[15]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[14]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[13]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[12]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[11]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[10]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[9]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[8]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[7]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[6]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[5]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[4]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[3]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[1]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[0]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[18]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[19]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[17]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[17]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[15]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[16]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[15]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[14]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[14]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[12]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[13]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[12]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[10]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[11]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[10]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[9]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[9]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[8]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[8]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[7]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[7]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[5]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[6]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[5]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[4]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[4]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[3]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[3]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[2]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[2]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[1]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteE_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[18]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[19]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[19]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[17]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[17]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[15]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[16]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[15]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[13]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[14]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[13]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[12]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[12]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[9]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[11]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[10]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[9]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[8]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[8]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[6]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[7]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[6]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[5]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[5]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[4]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[4]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[1]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[3]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[0]'
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[2]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/musicAddress_reg[0]' (FDR) to 'gameUnit/musicAddress_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/musicAddress_reg[2]' (FDR) to 'gameUnit/musicAddress_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameUnit/musicAddress_reg[4] )
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[16][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[12][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[10][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[9][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[8][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[7][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[4][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[3][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[2][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[1][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[0][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[16][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Times_reg[12][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[12][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Times_reg[10][1]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[10][0]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[9][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Times_reg[10][1]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[8][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Times_reg[10][1]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[7][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Times_reg[10][1]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[4][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Times_reg[10][1]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[3][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Times_reg[10][1]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[2][0]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[1][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Times_reg[10][1]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[0][0]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[16][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[12][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[10][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Times_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[9][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[8][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[7][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[4][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[3][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[2][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Times_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[1][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[0][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[16][1]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[16][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[12][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[12][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[10][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[10][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[9][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[9][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[8][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[8][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[7][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[7][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[4][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[4][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[3][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[2][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[1][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Times_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Times_reg[0][2]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[19][1]' (FDE) to 'gameUnit/soundUnit/Sheet/Keys_reg[19][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[18][1]' (FDE) to 'gameUnit/soundUnit/Sheet/Keys_reg[19][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[17][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[16][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[15][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[15][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[14][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[13][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[12][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[15][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[11][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[10][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[9][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[15][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[8][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[15][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[7][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[15][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[6][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[5][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[4][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[15][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[3][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[15][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[2][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[15][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[1][1]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[15][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[0][1]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[19][3]' (FDE) to 'gameUnit/soundUnit/Sheet/Keys_reg[19][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[18][3]' (FDE) to 'gameUnit/soundUnit/Sheet/Keys_reg[19][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[17][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[16][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[15][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[14][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[13][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[12][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[11][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[10][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[9][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[8][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[7][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[6][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[5][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[4][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[3][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[2][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[1][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[0][3]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[19][0]' (FDE) to 'gameUnit/soundUnit/Sheet/Keys_reg[19][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[18][0]' (FDE) to 'gameUnit/soundUnit/Sheet/Keys_reg[19][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[17][0]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[16][0]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[15][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[13][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[14][0]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[13][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[10][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[12][0]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[11][0]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[10][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[9][0]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[8][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[7][0]' (FDCE) to 'gameUnit/soundUnit/Sheet/Keys_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/Sheet/Keys_reg[6][0]' (FDPE) to 'gameUnit/soundUnit/Sheet/Keys_reg[5][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\gameUnit/soundUnit/Sheet/Keys_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameUnit/soundUnit/Sheet/Keys_reg[18][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameUnit/soundUnit/Sheet/Keys_reg[0][2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameUnit/p_0_out_inferred /\gameUnit/leftpaddlePosition_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameUnit/p_0_out_inferred__0 /\gameUnit/rightpaddlePosition_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\gameUnit/soundUnit/Sheet/KeyOutput_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameUnit/p_0_out_inferred /\gameUnit/leftpaddlePosition_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameUnit/soundUnit/Sheet/KeyOutput_reg[2] )
-INFO: [Synth 8-3886] merging instance 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteC_reg[2]' (FDC) to 'gameUnit/soundUnit/NoteUnit/UnitInput/NoteD_reg[0]'
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin musicAddress[4] with 1st driver pin 'gameUnit/soundUnit/Reader/CurrentAddress_inferred__0/out[4]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin musicAddress[4] with 2nd driver pin 'GND' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net musicAddress[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin musicAddress[3] with 1st driver pin 'gameUnit/soundUnit/Reader/CurrentAddress_inferred__0/out[3]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin musicAddress[3] with 2nd driver pin 'GND' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net musicAddress[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin musicAddress[2] with 1st driver pin 'gameUnit/soundUnit/Reader/CurrentAddress_inferred__0/out[2]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin musicAddress[2] with 2nd driver pin 'GND' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net musicAddress[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin musicAddress[1] with 1st driver pin 'gameUnit/soundUnit/Reader/CurrentAddress_inferred__0/out[1]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin musicAddress[1] with 2nd driver pin 'VCC' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net musicAddress[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin musicAddress[0] with 1st driver pin 'gameUnit/soundUnit/Reader/CurrentAddress_inferred__0/out[0]' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin musicAddress[0] with 2nd driver pin 'VCC' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net musicAddress[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v:28]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 980.980 ; gain = 418.676
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 979.863 ; gain = 417.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -502,13 +508,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 980.980 ; gain = 418.676
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 979.863 ; gain = 417.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 996.527 ; gain = 434.223
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 988.027 ; gain = 425.945
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -520,7 +526,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1004.539 ; gain = 442.234
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 997.070 ; gain = 434.988
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -545,13 +551,13 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-4442] BlackBox module \gameUnit/soundUnit/clockUnit  has unconnected pin reset
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.320 ; gain = 447.016
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1002.871 ; gain = 440.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.320 ; gain = 447.016
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1002.871 ; gain = 440.789
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -570,25 +576,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.320 ; gain = 447.016
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1002.871 ; gain = 440.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.320 ; gain = 447.016
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1002.871 ; gain = 440.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.320 ; gain = 447.016
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1002.871 ; gain = 440.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.320 ; gain = 447.016
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1002.871 ; gain = 440.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -606,16 +612,16 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |Clk50MHz |     1|
-|2     |CARRY4   |    62|
-|3     |LUT1     |    16|
-|4     |LUT2     |    95|
-|5     |LUT3     |    60|
-|6     |LUT4     |    65|
-|7     |LUT5     |    51|
-|8     |LUT6     |   106|
-|9     |FDCE     |    64|
-|10    |FDRE     |    98|
-|11    |FDSE     |    16|
+|2     |CARRY4   |    78|
+|3     |LUT1     |    21|
+|4     |LUT2     |   111|
+|5     |LUT3     |   106|
+|6     |LUT4     |    74|
+|7     |LUT5     |    79|
+|8     |LUT6     |    93|
+|9     |FDCE     |    71|
+|10    |FDRE     |   147|
+|11    |FDSE     |    28|
 |12    |IBUF     |     7|
 |13    |OBUF     |    15|
 +------+---------+------+
@@ -624,52 +630,55 @@ Report Instance Areas:
 +------+-------------------------+----------------------------+------+
 |      |Instance                 |Module                      |Cells |
 +------+-------------------------+----------------------------+------+
-|1     |top                      |                            |   657|
-|2     |  VGAdisplay             |CRTcontroller2020fall       |   225|
+|1     |top                      |                            |   832|
+|2     |  VGAdisplay             |CRTcontroller2020fall       |   235|
 |3     |    CRTclockUnit         |CRTClock2020Template        |    35|
-|4     |      pixelClockCounter  |UniversalCounter2020fall_2  |    33|
-|5     |    hsyncModule          |hsyncModule2020fall         |   101|
-|6     |      PixelClockUnit     |ClockedNegativeOneShot_0    |     6|
-|7     |      XPositionCounter   |UniversalCounter2020fall_1  |    89|
-|8     |    vsyncUnit            |vsyncModule2020fallTemplate |    89|
+|4     |      pixelClockCounter  |UniversalCounter2020fall_4  |    33|
+|5     |    hsyncModule          |hsyncModule2020fall         |   106|
+|6     |      PixelClockUnit     |ClockedNegativeOneShot_2    |     6|
+|7     |      XPositionCounter   |UniversalCounter2020fall_3  |    94|
+|8     |    vsyncUnit            |vsyncModule2020fallTemplate |    94|
 |9     |      LineEndOneShotUnit |ClockedNegativeOneShot      |     6|
-|10    |      YPositionCounter   |UniversalCounter2020fall    |    80|
-|11    |  gameUnit               |GamewithSound               |   410|
-|12    |    soundUnit            |PlaySoundNexysA7            |   199|
-|13    |      NoteUnit           |ThreeMusicNotes             |    53|
-|14    |        NoteEWave        |Waveform                    |    51|
-|15    |        UnitInput        |InputModule                 |     2|
-|16    |      PlayDebounce       |Debouncer                   |    53|
-|17    |        Timer            |DelayLoop                   |    47|
-|18    |      PlayNoteUnit       |PlayNote2                   |    87|
-|19    |        Timer            |OneSecElapseTime            |    81|
-|20    |      PlayOneShot        |ClockedOneShot              |     3|
-|21    |      Reader             |MusicSheetReader            |     1|
+|10    |      YPositionCounter   |UniversalCounter2020fall    |    85|
+|11    |  gameUnit               |GamewithSound               |   575|
+|12    |    soundUnit            |PlaySoundNexysA7            |   327|
+|13    |      NoteUnit           |ThreeMusicNotes             |   160|
+|14    |        NoteCWave        |Waveform                    |    52|
+|15    |        NoteDWave        |Waveform_0                  |    52|
+|16    |        NoteEWave        |Waveform_1                  |    52|
+|17    |        UnitInput        |InputModule                 |     3|
+|18    |      PlayDebounce       |Debouncer                   |    51|
+|19    |        Timer            |DelayLoop                   |    48|
+|20    |      PlayNoteUnit       |PlayNote2                   |    86|
+|21    |        Timer            |OneSecElapseTime            |    79|
+|22    |      PlayOneShot        |ClockedOneShot              |     4|
+|23    |      Reader             |MusicSheetReader            |    15|
+|24    |      Sheet              |MusicScore                  |     9|
 +------+-------------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.320 ; gain = 447.016
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1002.871 ; gain = 440.789
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 16 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1009.320 ; gain = 320.660
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.320 ; gain = 447.016
+Synthesis finished with 0 errors, 1 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1002.871 ; gain = 315.449
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1002.871 ; gain = 440.789
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1021.359 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1002.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1021.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1002.871 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-143 Infos, 27 Warnings, 16 Critical Warnings and 0 Errors encountered.
+174 Infos, 13 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1021.359 ; gain = 723.629
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1021.359 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1002.871 ; gain = 705.266
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1002.871 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase3_JD_NS/PongGame2021FallPhase3_JD_NS.runs/synth_1/PongWithSound.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file PongWithSound_utilization_synth.rpt -pb PongWithSound_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov  2 15:45:06 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  2 16:44:49 2021...

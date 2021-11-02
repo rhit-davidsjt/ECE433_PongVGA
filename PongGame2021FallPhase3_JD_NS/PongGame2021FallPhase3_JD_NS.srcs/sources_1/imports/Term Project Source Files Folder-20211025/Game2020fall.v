@@ -85,7 +85,10 @@ end
 // pixel color
 //Resolution is 640 x 480	
 // 799 x 520 is the actual range
-reg [5:0] missTimer;	
+reg [5:0] missTimer;
+reg [5:0] paddleTimer;	
+reg [5:0] wallTimer;
+
 wire visible = (xpos < 640 && ypos < 480);
 wire top = (visible && ypos <= 5);
 wire bottom = (visible && ypos >= 475);
@@ -102,6 +105,8 @@ wire ball = (xpos >= ballX && xpos <= ballX+7 && ypos >= ballY && ypos <= ballY+
 wire background = (visible && !(border || leftpaddle || rightpaddle || ball));
 wire checkerboard = (xpos[5] ^ ypos[5]);
 wire missed = visible && missTimer != 0;
+wire hitWall = wallTimer != 0;
+wire hitPaddle = paddleTimer != 0;
 
 assign red   = { missed || border || leftpaddle || rightpaddle, 3'b000 };
 assign green = { !missed && (border || leftpaddle || rightpaddle || ball), 3'b000 };
@@ -110,10 +115,16 @@ assign blue  = { !missed && (border || ball), background && checkerboard, backgr
 // ball collision	
 always @(posedge Clock100MHZ) begin
 	if (!endOfFrame) begin
-		if (ball && (left || right  || (leftpaddle && !ballXdir) || (rightpaddle && ballXdir)))
+		if (ball && (left || right  || (leftpaddle && !ballXdir) || (rightpaddle && ballXdir)))begin
 			bounceX <= 1;
-		if (ball && (top || bottom))
+			paddleTimer <= 63;
+			end
+			
+		if (ball && (top || bottom))begin
 			bounceY <= 1;
+			wallTimer <= 63;
+			end
+			
 		if (ball && (left || right))
 			missTimer <= 63;
 	end
@@ -131,6 +142,12 @@ always @(posedge Clock100MHZ) begin
 				ballYdir <= ~ballYdir;			
 			bounceX <= 0;
 			bounceY <= 0;
+			if (paddleTimer != 0)
+				paddleTimer <= paddleTimer - 1;
+				
+			if (wallTimer != 0)
+				wallTimer <= wallTimer - 1;
+				
 			if (missTimer != 0)
 				missTimer <= missTimer - 1;
 		end
@@ -138,17 +155,32 @@ always @(posedge Clock100MHZ) begin
 end
 
 //Setup of the Game Sounds
-wire hitWallSound = ball && (top || bottom);
-wire hitPaddleSound = ball&&leftpaddle || ball&&rightpaddle;
-wire missSound = missed;
+reg [4:0] musicAddress;
+reg playSound = 0;
 
-reg [7:0] musicAddress;
-always @(hitWallSound, hitPaddleSound, missSound)begin
-musicAddress <= 1;
-musicAddress <= 2;
-musicAddress <= 3;
+always @(posedge Clock100MHZ)begin
+if(missed == 1) begin
+musicAddress <= 0;
+playSound <=1;
 end
 
-PlaySoundNexysA7 soundUnit(playAgainButton || ((missSound || hitPaddleSound || hitWallSound) && ~muteSwitch), Reset, Clock100MHZ, musicAddress, Speaker);
+else if(hitWall == 1) begin
+musicAddress <= 12;
+playSound <=1;
+end
+
+else if(hitPaddle == 1) begin
+musicAddress <= 15;
+playSound <=1;
+end
+
+else begin
+musicAddress <= 0;
+playSound <=0;
+end
+
+end
+
+PlaySoundNexysA7 soundUnit(playAgainButton || (playSound && ~muteSwitch), Reset, Clock100MHZ, musicAddress, Speaker);
 
 endmodule
