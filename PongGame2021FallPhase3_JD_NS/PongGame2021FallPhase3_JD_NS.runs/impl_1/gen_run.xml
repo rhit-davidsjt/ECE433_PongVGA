@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1635870853">
+  <File Type="BITSTR-BMM" Name="PongWithSound_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="PongWithSound_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="PongWithSound_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="PongWithSound_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="PongWithSound.tcl"/>
+  <File Type="OPT-TIMING" Name="PongWithSound_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="PongWithSound_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="PongWithSound_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="PongWithSound_reports.tcl"/>
+  <File Type="OPT-DRC" Name="PongWithSound_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="PongWithSound.hwdef"/>
+  <File Type="PWROPT-DCP" Name="PongWithSound_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="PongWithSound_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="PongWithSound_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="PongWithSound_placed.dcp"/>
+  <File Type="PLACE-IO" Name="PongWithSound_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="PongWithSound_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="PongWithSound_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="PongWithSound_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="PongWithSound_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="PongWithSound_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="PongWithSound_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="PongWithSound_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="PongWithSound_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="PongWithSound.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="PongWithSound_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="PongWithSound_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="PongWithSound_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="PongWithSound.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="PongWithSound_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="PongWithSound_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="PongWithSound_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="PongWithSound_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="PongWithSound_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="PongWithSound_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="PongWithSound_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="PongWithSound.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="PongWithSound_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PongWithSound_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PongWithSound_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="PongWithSound_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="PongWithSound_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="PongWithSound_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="PongWithSound_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="PongWithSound_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="PongWithSound_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="PongWithSound_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="PongWithSound_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="PongWithSound_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="PongWithSound_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="PongWithSound_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PongWithSound_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PongWithSound_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="PongWithSound_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="PongWithSound_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PongWithSound_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="PongWithSound_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="PongWithSound_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="PongWithSound.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="PongWithSound_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="PongWithSound.rbt"/>
+  <File Type="BITSTR-NKY" Name="PongWithSound.nky"/>
+  <File Type="PDI-FILE" Name="PongWithSound.pdi"/>
+  <File Type="RCFI_FILE" Name="PongWithSound.rcfi"/>
+  <File Type="CFI_FILE" Name="PongWithSound.cfi"/>
+  <File Type="RNPI_FILE" Name="PongWithSound.rnpi"/>
+  <File Type="NPI_FILE" Name="PongWithSound.npi"/>
+  <File Type="RBD_FILE" Name="PongWithSound.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="PongWithSound.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="PongWithSound.sysdef"/>
+  <File Type="BG-BGN" Name="PongWithSound.bgn"/>
+  <File Type="BG-DRC" Name="PongWithSound.drc"/>
+  <File Type="RDI-RDI" Name="PongWithSound.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTClock2020Template.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTClock2020Template.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/ClockedNegativeOneShot.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/ClockedNegativeOneShot.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/ClockedPositiveOneShot.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/ClockedPositiveOneShot.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/Game2020fall.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/Game2020fall.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/PongGame2020fall_template.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/PongGame2020fall_template.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/UniversalCounter2020fall.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/UniversalCounter2020fall.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/hsyncModule2020fall.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/vsyncModule2020fallTemplate.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/vsyncModule2020fallTemplate.v"/>
+        <Attr Name="ImportTime" Val="1635186762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/PlaySoundNexysA7.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/SheetReader.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/OneSecElapseTime.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/WaveForm.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/MusicScore.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/DelayLoop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/ThreeMusicNotes.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/InputModule.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/PlayNote2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/NoteMap.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Play sound circuit-20211101/ClockedOneShot.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="PongWithSound"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Original_Constraints_File.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PongGame2020fallpahse1_JD_NS/PongGame2020fallpahse1_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc"/>
+        <Attr Name="ImportTime" Val="1635265168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/Original_Constraints_File.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Clk50MHz"/>
+</GenRun>

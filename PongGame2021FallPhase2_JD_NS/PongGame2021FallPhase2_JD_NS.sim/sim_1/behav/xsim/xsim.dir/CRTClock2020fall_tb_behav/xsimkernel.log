@@ -1,7 +1,7 @@
-Running: xsim.dir/CRTClock2020fall_tb_behav/xsimk.exe -simmode gui -wdb CRTClock2020fall_tb_behav.wdb -simrunnum 0 -socket 51872
+Running: xsim.dir/CRTClock2020fall_tb_behav/xsimk.exe -simmode gui -wdb CRTClock2020fall_tb_behav.wdb -simrunnum 0 -socket 61589
 Design successfully loaded
-Design Loading Memory Usage: 6412 KB (Peak: 6412 KB)
-Design Loading CPU Usage: 93 ms
+Design Loading Memory Usage: 6340 KB (Peak: 6340 KB)
+Design Loading CPU Usage: 77 ms
 Simulation completed
-Simulation Memory Usage: 7088 KB (Peak: 7088 KB)
-Simulation CPU Usage: 109 ms
+Simulation Memory Usage: 7024 KB (Peak: 7024 KB)
+Simulation CPU Usage: 93 ms

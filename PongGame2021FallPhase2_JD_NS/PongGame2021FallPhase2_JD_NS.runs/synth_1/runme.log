@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log CRTcontroller2020fall.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CRTcontroller2020fall.tcl
+    with args -log PongGame2020fall_template.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PongGame2020fall_template.tcl
 
 
 ****** Vivado v2019.2 (64-bit)
@@ -8,20 +8,25 @@
   **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
-source CRTcontroller2020fall.tcl -notrace
-Command: synth_design -top CRTcontroller2020fall -part xc7a100tcsg324-1
+source PongGame2020fall_template.tcl -notrace
+Command: synth_design -top PongGame2020fall_template -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15164 
-WARNING: [Synth 8-6901] identifier 'EndCount' is used before its declaration [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall.v:23]
+INFO: Helper process launched with PID 30340 
 WARNING: [Synth 8-2507] parameter declaration becomes local in CRTcontroller2020fall with formal parameter declaration list [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v:24]
 WARNING: [Synth 8-2507] parameter declaration becomes local in CRTcontroller2020fall with formal parameter declaration list [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v:29]
+WARNING: [Synth 8-6901] identifier 'EndCount' is used before its declaration [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall.v:23]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 790.973 ; gain = 239.020
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 791.328 ; gain = 239.707
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PongGame2020fall_template' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/PongGame2020fall_template.v:14]
+	Parameter NumberofPixels bound to: 10'b1010000000 
+	Parameter NumberofLines bound to: 10'b0111100000 
+	Parameter SystemClock bound to: 10'b0001100100 
+	Parameter CRTClock bound to: 10'b0000011001 
 INFO: [Synth 8-6157] synthesizing module 'CRTcontroller2020fall' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v:17]
 	Parameter ResolutionSize bound to: 10 - type: integer 
 	Parameter SystemClockSize bound to: 10 - type: integer 
@@ -53,8 +58,11 @@ WARNING: [Synth 8-689] width (32) of port connection 'EndCount' does not match p
 WARNING: [Synth 8-7023] instance 'pixelClockCounter' of module 'UniversalCounter2020fall' has 9 connections declared, but only 8 given [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/CRTClock2020Template.v:25]
 INFO: [Synth 8-6155] done synthesizing module 'CRTClock2020Template' (5#1) [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/CRTClock2020Template.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'CRTcontroller2020fall' (6#1) [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v:17]
+INFO: [Synth 8-6157] synthesizing module 'game2020fall' [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/Game2020fall.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'game2020fall' (7#1) [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/Game2020fall.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'PongGame2020fall_template' (8#1) [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/PongGame2020fall_template.v:14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 837.113 ; gain = 285.160
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 838.840 ; gain = 287.219
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -67,70 +75,19 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 837.113 ; gain = 285.160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 838.840 ; gain = 287.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 837.113 ; gain = 285.160
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 838.840 ; gain = 287.219
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 837.113 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 838.840 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc]
-WARNING: [Vivado 12-584] No ports matched 'Reset'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:3]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:3]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Clock'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:5]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:5]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'locked'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:11]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:11]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rota'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:13]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:13]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rotb'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:15]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:16]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'blue[2]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:17]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'blue[1]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:18]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'blue[0]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:19]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:19]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'green[3]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:20]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'green[2]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'green[1]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:22]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'green[0]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'red[3]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'red[2]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:25]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'red[1]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:26]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'red[0]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:27]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:29]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:29]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'clk100'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:31]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:31]
@@ -138,79 +95,34 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 WARNING: [Vivado 12-584] No ports matched 'clk100'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:32]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:32]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rota'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:33]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rotb'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:34]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:34]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'blue[2]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:37]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'blue[1]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:38]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'blue[0]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:39]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'green[3]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:40]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:40]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'green[2]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:41]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'green[1]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:42]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:42]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'green[0]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:43]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:43]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'red[3]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:44]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'red[2]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:45]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'red[1]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:46]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:46]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'red[0]'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:47]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Clock'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:49]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:49]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Reset'. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc:50]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CRTcontroller2020fall_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/CRTcontroller2020fall_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.srcs/constrs_1/new/Original_Constraints_File.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PongGame2020fall_template_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PongGame2020fall_template_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 944.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 954.012 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 944.363 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 954.012 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 944.363 ; gain = 392.410
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 954.012 ; gain = 402.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 944.363 ; gain = 392.410
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 954.012 ; gain = 402.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 944.363 ; gain = 392.410
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 954.012 ; gain = 402.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 944.363 ; gain = 392.410
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 954.012 ; gain = 402.391
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -224,19 +136,29 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   4 Input     32 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 9     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 13    
 	   4 Input     10 Bit       Adders := 1     
 	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               10 Bit    Registers := 3     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
 +---Muxes : 
 	   2 Input     10 Bit        Muxes := 12    
 	   4 Input     10 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
 	   4 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
 	   4 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -276,9 +198,29 @@ Detailed RTL Component Info :
 Module CRTClock2020Template 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
 +---Registers : 
 	                1 Bit    Registers := 1     
+Module game2020fall 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -295,8 +237,24 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design PongGame2020fall_template has port red[2] driven by constant 0
+WARNING: [Synth 8-3917] design PongGame2020fall_template has port red[1] driven by constant 0
+WARNING: [Synth 8-3917] design PongGame2020fall_template has port red[0] driven by constant 0
+WARNING: [Synth 8-3917] design PongGame2020fall_template has port green[2] driven by constant 0
+WARNING: [Synth 8-3917] design PongGame2020fall_template has port green[1] driven by constant 0
+WARNING: [Synth 8-3917] design PongGame2020fall_template has port green[0] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (p_0_out_inferred/\gameUnit/paddlePosition_reg[0] )
+INFO: [Synth 8-3886] merging instance 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[1]' (FDCE) to 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[9]' (FDCE) to 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[3]' (FDCE) to 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[5]' (FDCE) to 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[8]' (FDCE) to 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[4]' (FDCE) to 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[7]' (FDCE) to 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[2]' (FDCE) to 'VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\VGAdisplay/CRTclockUnit/pixelClockCounter/Q_reg[6] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 944.363 ; gain = 392.410
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 954.012 ; gain = 402.391
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -308,13 +266,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 944.363 ; gain = 392.410
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 954.012 ; gain = 402.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 944.363 ; gain = 392.410
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 954.012 ; gain = 402.391
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -326,7 +284,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 957.090 ; gain = 405.137
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 958.375 ; gain = 406.754
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -350,13 +308,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 961.828 ; gain = 409.875
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 965.164 ; gain = 413.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 961.828 ; gain = 409.875
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 965.164 ; gain = 413.543
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -375,25 +333,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 961.828 ; gain = 409.875
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 965.164 ; gain = 413.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 961.828 ; gain = 409.875
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 965.164 ; gain = 413.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 961.828 ; gain = 409.875
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 965.164 ; gain = 413.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 961.828 ; gain = 409.875
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 965.164 ; gain = 413.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -410,56 +368,59 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    31|
-|3     |LUT1   |    19|
-|4     |LUT2   |    22|
-|5     |LUT3   |    15|
-|6     |LUT4   |    50|
-|7     |LUT5   |    11|
-|8     |LUT6   |    45|
-|9     |FDCE   |    20|
-|10    |FDRE   |     3|
-|11    |FDSE   |     2|
-|12    |IBUF   |    22|
-|13    |OBUF   |    22|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    12|
+|4     |LUT2   |    30|
+|5     |LUT3   |    44|
+|6     |LUT4   |    44|
+|7     |LUT5   |    37|
+|8     |LUT6   |    58|
+|9     |FDCE   |    21|
+|10    |FDRE   |    32|
+|11    |FDSE   |    16|
+|12    |IBUF   |     4|
+|13    |OBUF   |    14|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+-----------------------+----------------------------+------+
-|      |Instance               |Module                      |Cells |
-+------+-----------------------+----------------------------+------+
-|1     |top                    |                            |   263|
-|2     |  CRTclockUnit         |CRTClock2020Template        |     2|
-|3     |  hsyncModule          |hsyncModule2020fall         |   104|
-|4     |    PixelClockUnit     |ClockedNegativeOneShot_0    |     6|
-|5     |    XPositionCounter   |UniversalCounter2020fall_1  |    76|
-|6     |  vsyncUnit            |vsyncModule2020fallTemplate |   103|
-|7     |    LineEndOneShotUnit |ClockedNegativeOneShot      |     7|
-|8     |    YPositionCounter   |UniversalCounter2020fall    |    74|
-+------+-----------------------+----------------------------+------+
++------+-------------------------+----------------------------+------+
+|      |Instance                 |Module                      |Cells |
++------+-------------------------+----------------------------+------+
+|1     |top                      |                            |   337|
+|2     |  VGAdisplay             |CRTcontroller2020fall       |   154|
+|3     |    CRTclockUnit         |CRTClock2020Template        |     4|
+|4     |      pixelClockCounter  |UniversalCounter2020fall_2  |     2|
+|5     |    hsyncModule          |hsyncModule2020fall         |    62|
+|6     |      PixelClockUnit     |ClockedNegativeOneShot_0    |     7|
+|7     |      XPositionCounter   |UniversalCounter2020fall_1  |    54|
+|8     |    vsyncUnit            |vsyncModule2020fallTemplate |    88|
+|9     |      LineEndOneShotUnit |ClockedNegativeOneShot      |     9|
+|10    |      YPositionCounter   |UniversalCounter2020fall    |    76|
+|11    |  gameUnit               |game2020fall                |   164|
++------+-------------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 961.828 ; gain = 409.875
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 965.164 ; gain = 413.543
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 961.828 ; gain = 302.625
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 961.828 ; gain = 409.875
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:42 . Memory (MB): peak = 965.164 ; gain = 298.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 965.164 ; gain = 413.543
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 961.828 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 977.133 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 973.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 977.133 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-24 Infos, 41 Warnings, 35 Critical Warnings and 0 Errors encountered.
+38 Infos, 15 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 973.367 ; gain = 675.375
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 973.367 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 977.133 ; gain = 678.566
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 977.133 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.runs/synth_1/CRTcontroller2020fall.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file CRTcontroller2020fall_utilization_synth.rpt -pb CRTcontroller2020fall_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov  1 12:45:14 2021...
+INFO: [Common 17-1381] The checkpoint 'C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase2_JD_NS/PongGame2021FallPhase2_JD_NS.runs/synth_1/PongGame2020fall_template.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PongGame2020fall_template_utilization_synth.rpt -pb PongGame2020fall_template_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  1 14:28:28 2021...

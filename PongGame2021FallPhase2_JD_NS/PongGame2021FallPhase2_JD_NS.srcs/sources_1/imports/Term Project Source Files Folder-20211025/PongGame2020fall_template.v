@@ -33,6 +33,6 @@ CRTcontroller2020fall VGAdisplay(SystemClock, CRTClock, NumberofPixels, Numberof
 //output [3:0] red, green, blue);
 
 ////change the game module to add your name initials	
-game2020fall gameUnit(clock, rota, rotb,xpos, ypos, red, green, blue);
+game2020fall gameUnit(Clock, rota, rotb, xpos, ypos, red, green, blue);
 					
 endmodule
