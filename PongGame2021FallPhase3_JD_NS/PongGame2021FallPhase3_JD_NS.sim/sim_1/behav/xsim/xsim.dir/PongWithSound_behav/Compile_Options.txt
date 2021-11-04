@@ -1,0 +1,1 @@
+-wto "7ab8a6ff163b4b78816105284dfceeec" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "PongWithSound_behav" "xil_defaultlib.PongWithSound" "xil_defaultlib.glbl" -log "elaborate.log" 
