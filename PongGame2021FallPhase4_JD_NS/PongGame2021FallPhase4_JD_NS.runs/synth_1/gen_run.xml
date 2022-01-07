@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1636051255">
-  <File Type="PA-TCL" Name="PongWithSound.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="PongWithSound_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="PongWithSound_reports.tcl"/>
-  <File Type="RDS-RDS" Name="PongWithSound.vds"/>
-  <File Type="RDS-UTIL" Name="PongWithSound_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="PongWithSound_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="PongWithSound.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="PongWithSound_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="PongWithSound_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1636393222">
+  <File Type="PA-TCL" Name="PongwithNewFeatures_JD_NS.tcl"/>
+  <File Type="REPORTS-TCL" Name="PongwithNewFeatures_JD_NS_reports.tcl"/>
+  <File Type="RDS-RDS" Name="PongwithNewFeatures_JD_NS.vds"/>
+  <File Type="RDS-DCP" Name="PongwithNewFeatures_JD_NS.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/CRTClock2020Template.v">
@@ -200,9 +195,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/Seven_Segment_Display_Module.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="PongWithSound"/>
+      <Option Name="TopModule" Val="PongwithNewFeatures_JD_NS"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

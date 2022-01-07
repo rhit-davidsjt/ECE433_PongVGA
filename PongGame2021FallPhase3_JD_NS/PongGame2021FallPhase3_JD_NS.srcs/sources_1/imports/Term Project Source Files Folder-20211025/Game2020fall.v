@@ -9,7 +9,15 @@
 // -----------------------------------------------
 //change the game module to add your name initials	
 
-module GamewithSound(input Clock100MHZ, rotaLeft, rotbLeft, rotaRight, rotbRight, playAgainButton, muteSwitch, Reset, input [9:0] xpos, ypos,
+//Author: Nicholas Snow and Jack Davidson
+//CM 513 and CM 3127
+//Date Started: October 27, 2021
+//Date Finished: November 1, 2021
+//Purpose: ECE-433-01 Final Project
+//Module Name: Final Project: Pong Game Module
+//Type: Verilog Behaviorial File 
+
+module GamewithSound_JD_NS(input Clock100MHZ, rotaLeft, rotbLeft, rotaRight, rotbRight, playAgainButton, muteSwitch, Reset, input [9:0] xpos, ypos,
 output [3:0] red, green, blue, 
 output Speaker);
 		

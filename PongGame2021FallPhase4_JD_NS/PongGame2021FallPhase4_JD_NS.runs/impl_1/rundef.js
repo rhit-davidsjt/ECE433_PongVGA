@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log PongWithSound.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source PongWithSound.tcl -notrace" );
+         "-log PongwithNewFeatures_JD_NS.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source PongwithNewFeatures_JD_NS.tcl -notrace" );
 
 
 

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2020fallpahse1_JD_NS/PongGame2020fallpahse1_JD_NS.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/davidsjt/Documents/2021-22/Fall/ECE433/Labs/ECE433_PongVGA/PongGame2020fallpahse1_JD_NS/PongGame2020fallpahse1_JD_NS.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="cb93208848fe47e1b10be65b7c519bc4"/>
@@ -58,20 +58,8 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/OriginalPong.v">
+      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/OriginalPongNexysA7.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/OriginalPong.v"/>
-          <Attr Name="ImportTime" Val="1635186762"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/vsyncModule2020fallTemplate.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/vsyncModule2020fallTemplate.v"/>
-          <Attr Name="ImportTime" Val="1635186762"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -131,6 +119,16 @@
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/hsyncModule2020fall.v"/>
+          <Attr Name="ImportTime" Val="1635186762"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Term Project Source Files Folder-20211025/vsyncModule2020fallTemplate.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Downloads/Term Project Source Files Folder-20211025/vsyncModule2020fallTemplate.v"/>
           <Attr Name="ImportTime" Val="1635186762"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

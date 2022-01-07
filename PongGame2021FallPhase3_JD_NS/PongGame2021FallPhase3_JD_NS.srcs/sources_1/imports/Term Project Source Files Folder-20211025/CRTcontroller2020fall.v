@@ -14,7 +14,15 @@
 // hsync <= ~(xposos > 664 && xposos <= 760);  // active for 95 clocks
 // vsync <= ~(yposos == 490 || yposos == 491);   // active for lines 490 and 491
 
-module CRTcontroller2020fall #(parameter ResolutionSize=10, SystemClockSize=10) (
+//Author: Nicholas Snow and Jack Davidson
+//CM 513 and CM 3127
+//Date Started: October 27, 2021
+//Date Finished: November 1, 2021
+//Purpose: ECE-433-01 Final Project
+//Module Name: Final Project: VGA Controller
+//Type: Verilog Behaviorial File 
+
+module CRTcontroller2021fall #(parameter ResolutionSize=10, SystemClockSize=10) (
 input [SystemClockSize-1:0] SystemClockFreq, CRTClockFreq, 
 input [ResolutionSize-1:0] Xresolution, Yresolution,
 input reset, clock, output hsync, vsync, 
@@ -37,7 +45,7 @@ wire LineEnd, PixelClock;
 //input PixelClock, reset, clock,
 //output hsync, LineEnd, output reg [xresolution-1:0] xposition);
 
-hsyncModule2020fall hsyncModule(hSynchPulse, hBackPorch,  Xresolution, hFrontPorch, 
+hsyncModule2021fall hsyncModule(hSynchPulse, hBackPorch,  Xresolution, hFrontPorch, 
 PixelClock, reset, clock, hsync, LineEnd, xpos);
 
 //module vsyncModule2020fall #(parameter yresolution=10)(
@@ -45,12 +53,12 @@ PixelClock, reset, clock, hsync, LineEnd, xpos);
 //input LineEnd, reset, clock,
 //output vsync, output [yresolution-1:0] yposition);
 
-vsyncModule2020fallTemplate vsyncUnit(vSynchPulse, vBackPorch, Yresolution, 
+vsyncModule2021fall vsyncUnit(vSynchPulse, vBackPorch, Yresolution, 
 vFrontPorch, LineEnd, reset, clock, vsync, ypos);
 
 //module CRTClock2020fall #(parameter SystemClockSize=10)(
 //input [SystemClockSize-1:0] SystemClockFreq, CRTClockFreq, 
 //input Reset, Clock,
 //output reg PixelClock);
-CRTClock2020Template CRTclockUnit(SystemClockFreq, CRTClockFreq, reset, clock, PixelClock);
+CRTClock2021 CRTclockUnit(SystemClockFreq, CRTClockFreq, reset, clock, PixelClock);
 endmodule

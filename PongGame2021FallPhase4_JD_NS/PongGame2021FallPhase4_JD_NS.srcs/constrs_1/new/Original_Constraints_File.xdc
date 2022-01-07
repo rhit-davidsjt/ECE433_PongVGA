@@ -58,3 +58,20 @@ set_property PACKAGE_PIN G6 [get_ports rotbLeft]
 
 set_property PACKAGE_PIN V10 [get_ports muteSwitch]
 set_property IOSTANDARD LVCMOS33 [get_ports muteSwitch]
+
+
+set_property PACKAGE_PIN H6 [get_ports increasedSpeedSwitch]
+set_property PACKAGE_PIN U12 [get_ports increasedRightDifficultySwitch]
+set_property PACKAGE_PIN U11 [get_ports increasedLeftDifficultySwitch]
+set_property IOSTANDARD LVCMOS33 [get_ports increasedLeftDifficultySwitch]
+set_property IOSTANDARD LVCMOS33 [get_ports increasedRightDifficultySwitch]
+set_property IOSTANDARD LVCMOS33 [get_ports increasedSpeedSwitch]
+
+set_property PACKAGE_PIN V11 [get_ports testLED]
+set_property IOSTANDARD LVCMOS33 [get_ports testLED]
+
+set_property PACKAGE_PIN C17 [get_ports testLED1]
+set_property PACKAGE_PIN D18 [get_ports testLED2]
+set_property IOSTANDARD LVCMOS33 [get_ports testLED1]
+set_property IOSTANDARD LVCMOS33 [get_ports testLED2]
+

@@ -7,6 +7,15 @@
 //Term Project on Pong game on VGA
 //this is a template to be completed by students
 
+//Author: Nicholas Snow and Jack Davidson
+//CM 513 and CM 3127
+//Date Started: October 27, 2021
+//Date Finished: November 1, 2021
+//Purpose: ECE-433-01 Final Project
+//Module Name: Final Project: CRT Clock Module
+//Type: Verilog Behaviorial File 
+
+
 module CRTClock2020Template #(parameter SystemClockSize=10)(
 input [SystemClockSize-1:0] SystemClockFreq, CRTClockFreq, 
 input Reset, Clock,

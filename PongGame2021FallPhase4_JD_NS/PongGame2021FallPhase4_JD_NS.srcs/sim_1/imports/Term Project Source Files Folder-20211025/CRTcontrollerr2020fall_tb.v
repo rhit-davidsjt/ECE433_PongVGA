@@ -13,7 +13,7 @@ module CRTcontroller2020fall_tb;
 //module CRTcontroller2019fall #(parameter ResolutionSize=10, SystemClockSize=10) (
 //input [SystemClockSize-1:0] SystemClockFreq, CRTClockFreq, input [ResolutionSize-1:0] Xresolution, Yresolution,
 //input reset, clock, output hsync, vsync, output [ResolutionSize-1:0] xpos, ypos);
-	CRTcontroller2020fall uut (
+	CRTcontroller2021fall uut (
 	SystemClock, CRTClock, Xresolution, Yresolution, reset, clock, hsync, 
 	vsync, xposition, yposition);
 
@@ -21,8 +21,8 @@ module CRTcontroller2020fall_tb;
 		// Initialize Inputs
 		Xresolution = 8;
 		Yresolution = 4;
-		SystemClock = 5;
-		CRTClock=2;
+		SystemClock = 12;
+		CRTClock=3;
 		reset = 0;
 		clock=0;
 	end

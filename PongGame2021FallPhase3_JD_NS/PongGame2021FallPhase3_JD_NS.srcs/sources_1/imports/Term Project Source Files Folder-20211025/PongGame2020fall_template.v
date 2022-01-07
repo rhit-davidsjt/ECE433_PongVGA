@@ -9,9 +9,18 @@
 //the VGA pixel clock is 25MHz
 //this is a template for students to complete
 //try to match the video_timer
-//based on pong from http://www.bigmessowires.com/2009/06/21/fpga-pong/. 
+//based on pong from http://www.bigmessowires.com/2009/06/21/fpga-pong/.
 
-module PongWithSound(
+//Author: Nicholas Snow and Jack Davidson
+//CM 513 and CM 3127
+//Date Started: November 1, 2021
+//Date Finished: November 5, 2021
+//Purpose: ECE-433-01 Final Project
+//Module Name: Final Project: Pong Game Top Level
+//Type: Verilog Behaviorial File
+
+
+module PongWithSound_JD_NS(
     input rotaLeft, rotbLeft, rotaRight, rotbRight, Reset, Clock, playAgainButton, muteSwitch,
     output [3:0] red, green, blue,
     output hsync, vsync, Speaker
@@ -27,13 +36,13 @@ parameter [9:0] SystemClock=10'd100, CRTClock=10'd25; //MHz
 //input [SystemClockSize-1:0] SystemClockFreq, CRTClockFreq, input [ResolutionSize-1:0] Xresolution, Yresolution,
 //input reset, clock, output hsync, vsync, output [ResolutionSize-1:0] xpos, ypos);
 
-CRTcontroller2020fall VGAdisplay(SystemClock, CRTClock, NumberofPixels, NumberofLines, Reset, Clock, hsync, vsync, xpos, ypos);
+CRTcontroller2021fall VGAdisplay(SystemClock, CRTClock, NumberofPixels, NumberofLines, Reset, Clock, hsync, vsync, xpos, ypos);
 	  
 //module game2020fall(input clk25, rota, rotb, input [9:0] xpos, ypos,
 //output [3:0] red, green, blue);
 
 ////change the game module to add your name initials	
-GamewithSound gameUnit(Clock, rotaLeft, rotbLeft, rotaRight, rotbRight, playAgainButton, muteSwitch, Reset, xpos, ypos, red, green, blue, Speaker);
+GamewithSound_JD_NS gameUnit(Clock, rotaLeft, rotbLeft, rotaRight, rotbRight, playAgainButton, muteSwitch, Reset, xpos, ypos, red, green, blue, Speaker);
 
 
 //Play Sound Module

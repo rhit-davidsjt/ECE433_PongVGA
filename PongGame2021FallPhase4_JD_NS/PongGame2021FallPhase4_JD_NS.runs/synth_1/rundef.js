@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log PongWithSound.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PongWithSound.tcl" );
+         "-log PongwithNewFeatures_JD_NS.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PongwithNewFeatures_JD_NS.tcl" );
 
 
 

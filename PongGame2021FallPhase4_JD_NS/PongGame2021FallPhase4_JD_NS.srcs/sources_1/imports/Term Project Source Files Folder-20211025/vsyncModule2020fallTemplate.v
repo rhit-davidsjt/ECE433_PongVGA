@@ -9,6 +9,14 @@
 //this is how it is done by the video timer of the pong game
 //LineEnd and FrameEnd are ANDed to restart frame
 
+//Author: Nicholas Snow and Jack Davidson
+//CM 513 and CM 3127
+//Date Started: October 27, 2021
+//Date Finished: November 1, 2021
+//Purpose: ECE-433-01 Final Project
+//Module Name: Final Project: Vysnc Module
+//Type: Verilog Behaviorial File 
+
 module vsyncModule2020fallTemplate#(parameter yresolution=10)(
 input [yresolution-1:0] SynchPulse, BackPorch, ActiveVideo, FrontPorch, 
 input LineEnd, reset, clock,
@@ -32,5 +40,6 @@ ClockedNegativeOneShot LineEndOneShotUnit(LineEnd, reset, clock, LineEndOneShot)
 //output reg TerminalCount);
 UniversalCounter2020fall YPositionCounter(10'd0,10'd0,EndCount, ycount==EndCount && LineEndOneShot, LineEndOneShot || ycount==EndCount, reset, clock, ycount, );
 
-always @(*) yposition <= ycount;
+always @(*) 
+yposition <= ycount;
 endmodule 

@@ -9,10 +9,25 @@
 // -----------------------------------------------
 //change the game module to add your name initials	
 
-module GamewithSound(input Clock100MHZ, rotaLeft, rotbLeft, rotaRight, rotbRight, playAgainButton, muteSwitch, Reset, input [9:0] xpos, ypos,
+//Author: Nicholas Snow and Jack Davidson
+//CM 513 and CM 3127
+//Date Started: November 1, 2021
+//Date Finished: November 5, 2021
+//Purpose: ECE-433-01 Final Prokect
+//Module Name: Final Project: Pong Game Module
+//Type: Verilog Behaviorial File
+
+module NewGame_NS_JD(input Clock100MHZ, rotaLeft, rotbLeft, rotaRight, rotbRight, playAgainButton, 
+increasedLeftDifficultySwitch,increasedRightDifficultySwitch,increasedSpeedSwitch, muteSwitch, Reset, input [9:0] xpos, ypos,
+output reg [3:0] leftScore, rightScore,
 output [3:0] red, green, blue, 
-output Speaker);
+output Speaker, output reg testLED1, testLED2);
 		
+initial begin
+leftScore = 0;
+rightScore = 0;
+end
+	
 // Left paddle movement		
 reg [8:0] leftpaddlePosition;
 reg [2:0] leftquadAr, leftquadBr;
@@ -22,7 +37,21 @@ reg [20:0] leftPaddleLength = 124;
 always @(posedge Clock100MHZ) leftquadAr <= {leftquadAr[1:0], rotaLeft};
 always @(posedge Clock100MHZ) leftquadBr <= {leftquadBr[1:0], rotbLeft};
 
-always @(posedge Clock100MHZ)
+always @(posedge Clock100MHZ) begin
+if(Reset == 1)begin
+leftpaddlePosition <=0;
+if(increasedLeftDifficultySwitch == 1)
+leftPaddleLength <= 62;
+else
+leftPaddleLength <= 124;
+end
+
+if(increasedLeftDifficultySwitch == 1)
+leftPaddleLength <= 62;
+else
+leftPaddleLength <= 124;
+
+
 if(leftquadAr[2] ^ leftquadAr[1] ^ leftquadBr[2] ^ leftquadBr[1])
 begin
 	if(leftquadAr[2] ^ leftquadBr[1]) begin
@@ -34,6 +63,7 @@ begin
 			leftpaddlePosition <= leftpaddlePosition - 4;
 	end
 end
+end
 		
 // Right paddle movement		
 reg [8:0] rightpaddlePosition;
@@ -44,7 +74,22 @@ reg [20:0] rightPaddleLength = 124;
 always @(posedge Clock100MHZ) rightquadAr <= {rightquadAr[1:0], rotaRight};
 always @(posedge Clock100MHZ) rightquadBr <= {rightquadBr[1:0], rotbRight};
 
-always @(posedge Clock100MHZ)
+always @(posedge Clock100MHZ) begin
+if(Reset == 1)begin
+rightpaddlePosition <=0;
+if(increasedRightDifficultySwitch == 1)
+rightPaddleLength <= 62;
+else
+rightPaddleLength <= 124;
+end
+
+if(increasedRightDifficultySwitch == 1)
+rightPaddleLength <= 62;
+else
+rightPaddleLength <= 124;
+
+
+
 if(rightquadAr[2] ^ rightquadAr[1] ^ rightquadBr[2] ^ rightquadBr[1])
 begin
 	if(rightquadAr[2] ^ rightquadBr[1]) begin
@@ -56,7 +101,7 @@ begin
 			rightpaddlePosition <= rightpaddlePosition + 4;
 	end
 end
-		
+end		
 		
 		
 		
@@ -72,6 +117,22 @@ reg [7:0] defaultSpeed = 2;
 wire endOfFrame = (xpos == 0 && ypos == 480);
 	
 always @(posedge Clock100MHZ) begin
+if(Reset == 1)begin
+ballX <= 480;
+ballY <= 300;
+if(increasedSpeedSwitch == 1)
+defaultSpeed = 4;
+else
+defaultSpeed = 2;
+end
+
+if(increasedSpeedSwitch == 1)
+defaultSpeed = 4;
+else
+defaultSpeed = 2;
+
+
+
 	if (endOfFrame) begin // update ball position at end of each frame
 		if (ballX == 0 && ballY == 0) begin // cheesy reset handling, assumes initial value of 0
 			ballX <= 480;
@@ -93,7 +154,8 @@ end
 	
 	
 //Timer Definition for each action
-reg [5:0] missTimer;
+reg [5:0] missLeftTimer;
+reg [5:0] missRightTimer;
 reg [5:0] paddleTimer;	
 reg [5:0] wallTimer;	
 	
@@ -120,9 +182,14 @@ wire background = (visible && !(border || leftpaddle || rightpaddle || ball));
 wire checkerboard = (xpos[5] ^ ypos[5]);
 
 //Status Wires
-wire missed = visible && missTimer != 0;
+wire missedLeft = visible && missLeftTimer != 0;
+wire missedRight = visible && missRightTimer != 0;
+wire missed = missedLeft || missedRight;
 wire hitWall = wallTimer != 0;
 wire hitPaddle = paddleTimer != 0;
+
+
+
 
 //Define color based on objects
 assign red   = { missed || border || leftpaddle || rightpaddle, 3'b000 };
@@ -130,9 +197,23 @@ assign green = { !missed && (border || leftpaddle || rightpaddle || ball), 3'b00
 assign blue  = { !missed && (border || ball), background && checkerboard, background && !checkerboard, background && !checkerboard  }; 
 		
 		
+
+reg leftMissFlag = 0, rightMissFlag = 0;
+	
 		
 //Collisions Module
 always @(posedge Clock100MHZ) begin
+if(Reset == 1)begin
+ballXdir <= 1;
+ballYdir <= 1;
+bounceX <= 0;
+bounceY <= 0;
+rightScore <=0;
+leftScore <=0;
+rightMissFlag <= 0;
+leftMissFlag <= 0;
+end
+
 	if (!endOfFrame) begin
 		if (ball && (left || right  || (leftpaddle && !ballXdir) || (rightpaddle && ballXdir)))begin
 			bounceX <= 1;
@@ -144,8 +225,23 @@ always @(posedge Clock100MHZ) begin
 			wallTimer <= 63;
 			end
 			
-		if (ball && (left || right))
-			missTimer <= 63;
+		if (ball && left )begin
+			missLeftTimer <= 63;
+			if(rightMissFlag == 0) begin
+			     rightMissFlag <= 1;
+			     testLED1 <= ~testLED1;
+			     rightScore <= rightScore+1;
+			end
+		end
+			
+		if (ball && right)begin
+			missRightTimer <= 63;
+			if(leftMissFlag == 0) begin
+			     leftMissFlag <= 1;
+			     testLED2 <= ~testLED2;
+			     leftScore <= leftScore+1;
+			end
+	    end
 	end //Always checking for this
 	
 	
@@ -172,14 +268,47 @@ always @(posedge Clock100MHZ) begin
 			if (wallTimer != 0)
 				wallTimer <= wallTimer - 1;
 				
-			if (missTimer != 0)
-				missTimer <= missTimer - 1;
+			if (missLeftTimer != 0)
+				missLeftTimer <= missLeftTimer - 1;
 				
-				
+			
+			if (missRightTimer != 0)
+				missRightTimer <= missRightTimer - 1;
+		    
+		    if (missLeftTimer == 0)
+				    leftMissFlag = 0;
+				    
+		    if (missRightTimer == 0)
+				    rightMissFlag = 0;
 	
 		end
 	end
 end
+
+
+//wire OneShotLeft;
+//ClockedOneShot LeftOneShot(missedLeft, OneShotLeft, Reset, Clock100MHz);
+//wire OneShotRight;
+//ClockedOneShot RightOneShot(missedRight, OneShotRight, Reset, Clock100MHz);
+
+
+////Scoring
+//always @(Clock100MHZ) begin
+//if(OneShotLeft ==1)begin
+//rightScore <= rightScore +1;
+//end
+//end
+//always @(Clock100MHZ) begin
+//if(OneShotRight == 1)begin
+//leftScore <= leftScore +1;
+
+//end
+//end
+
+
+
+
+
 
 
 //Sound Module Definition
@@ -199,7 +328,6 @@ playSound <=1;
 end
 
 else if(hitPaddle == 1) begin
-//Increase the ball speed if the ball is hit
 musicAddress <= 15;
 playSound <=1;
 end
@@ -215,5 +343,7 @@ end
 PlaySoundNexysA7 soundUnit(playAgainButton || (playSound && ~muteSwitch), Reset, Clock100MHZ, musicAddress, Speaker);
 
 endmodule
+
+
 
 

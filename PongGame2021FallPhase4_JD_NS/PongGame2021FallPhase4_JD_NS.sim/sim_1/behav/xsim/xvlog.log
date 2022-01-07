@@ -1,0 +1,62 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/ip/Clk50MHz/Clk50MHz_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk50MHz_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/ip/Clk50MHz/Clk50MHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk50MHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/CRTClock2020Template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2020Template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/CRTcontroller2020fall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTcontroller2021fall
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/ClockedNegativeOneShot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockedNegativeOneShot
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/ClockedPositiveOneShot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockedPositiveOneShot
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/Game2020fall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NewGame_NS_JD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/PongGame2020fall_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PongwithNewFeatures_JD_NS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/UniversalCounter2020fall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UniversalCounter2020fall
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsyncModule2020fall
+INFO: [VRFC 10-2458] undeclared symbol PixelClockOneShot, assumed default net type wire [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall.v:22]
+WARNING: [VRFC 10-3380] identifier 'EndCount' is used before its declaration [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/vsyncModule2020fallTemplate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vsyncModule2020fallTemplate
+INFO: [VRFC 10-2458] undeclared symbol LineEndOneShot, assumed default net type wire [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Term Project Source Files Folder-20211025/vsyncModule2020fallTemplate.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/PlaySoundNexysA7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PlaySoundNexysA7
+INFO: [VRFC 10-2458] undeclared symbol Over, assumed default net type wire [C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/PlaySoundNexysA7.v:29]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/SheetReader.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MusicSheetReader
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/OneSecElapseTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OneSecElapseTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/WaveForm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Waveform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/MusicScore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MusicScore
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/DelayLoop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DelayLoop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/ThreeMusicNotes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ThreeMusicNotes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/InputModule.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InputModule
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/PlayNote2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PlayNote2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/NoteMap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NoteMap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/imports/Play sound circuit-20211101/ClockedOneShot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockedOneShot
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sources_1/new/Seven_Segment_Display_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_Segment_Display_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sim_1/imports/Term Project Source Files Folder-20211025/CRTClock2020fall_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2020fall_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sim_1/imports/Term Project Source Files Folder-20211025/CRTcontrollerr2020fall_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTcontroller2020fall_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sim_1/imports/Term Project Source Files Folder-20211025/vsyncModule2020fall_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vsyncModule2020fall_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sim_1/imports/Term Project Source Files Folder-20211025/hsyncModule2020fall_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsyncModule2020fall_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/snownp/ECE433/Final Project/ECE433_PongVGA/PongGame2021FallPhase4_JD_NS/PongGame2021FallPhase4_JD_NS.srcs/sim_1/imports/Play sound circuit-20211101/MusicSheetWriterTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MusicSheetWriterTB

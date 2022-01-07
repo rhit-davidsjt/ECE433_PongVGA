@@ -11,11 +11,19 @@
 //try to match the video_timer
 //based on pong from http://www.bigmessowires.com/2009/06/21/fpga-pong/. 
 
-module PongWithSound(
-    input rotaLeft, rotbLeft, rotaRight, rotbRight, Reset, Clock, playAgainButton, muteSwitch,
-    output [3:0] red, green, blue,
-    output hsync, vsync, Speaker
-    );
+//Author: Nicholas Snow and Jack Davidson
+//CM 513 and CM 3127
+//Date Started: November 1, 2021
+//Date Finished: November 5, 2021
+//Purpose: ECE-433-01 Final Prokect
+//Module Name: Final Project: Pong Game Top Level
+//Type: Verilog Behaviorial File
+
+module PongwithNewFeatures_JD_NS(
+    input rotaLeft, rotbLeft, rotaRight, rotbRight, Reset, Clock, playAgainButton, muteSwitch, 
+    increasedLeftDifficultySwitch,increasedRightDifficultySwitch,increasedSpeedSwitch,
+    output reg [3:0] red, green, blue,
+    output hsync, vsync, Speaker, testLED1, testLED2);
 
 wire [9:0] xpos;
 wire [9:0] ypos;
@@ -23,20 +31,42 @@ wire [9:0] ypos;
 parameter [9:0] NumberofPixels=10'd640, NumberofLines=10'd480;
 parameter [9:0] SystemClock=10'd100, CRTClock=10'd25; //MHz 
 
-//module CRTcontroller2020fall #(parameter ResolutionSize=10, SystemClockSize=10) (
-//input [SystemClockSize-1:0] SystemClockFreq, CRTClockFreq, input [ResolutionSize-1:0] Xresolution, Yresolution,
-//input reset, clock, output hsync, vsync, output [ResolutionSize-1:0] xpos, ypos);
 
-CRTcontroller2020fall VGAdisplay(SystemClock, CRTClock, NumberofPixels, NumberofLines, Reset, Clock, hsync, vsync, xpos, ypos);
+CRTcontroller2021fall VGAdisplay(SystemClock, CRTClock, NumberofPixels, NumberofLines, Reset, Clock, hsync, vsync, xpos, ypos);
 	  
-//module game2020fall(input clk25, rota, rotb, input [9:0] xpos, ypos,
-//output [3:0] red, green, blue);
 
-////change the game module to add your name initials	
-GamewithSound gameUnit(Clock, rotaLeft, rotbLeft, rotaRight, rotbRight, playAgainButton, muteSwitch, Reset, xpos, ypos, red, green, blue, Speaker);
+wire [3:0] redGame, greenGame, blueGame;
+wire [3:0] rightScore, leftScore;
 
 
-//Play Sound Module
-//PlaySoundNexysA7 soundUnit(playAgainButton, Speaker, Reset, Clock);
+//Game Unit
+NewGame_NS_JD gameUnit(Clock, rotaLeft, rotbLeft, rotaRight, rotbRight, playAgainButton, 
+increasedLeftDifficultySwitch,increasedRightDifficultySwitch,increasedSpeedSwitch, muteSwitch, Reset, xpos, ypos, 
+leftScore, rightScore, redGame, greenGame, blueGame, Speaker, testLED1, testLED2);
+
+
+//Seven Segment Display Score Module
+wire rightDigit;
+wire leftDigit;
+
+Seven_Segment_Display_Module rightSevenSegmentDisplay(601,10, xpos, ypos, rightScore, rightDigit);
+Seven_Segment_Display_Module leftSevenSegmentDisplay(10,10, xpos, ypos, leftScore, leftDigit);
+
+
+//Generate the final output
+always @(Clock) begin
+if(rightDigit || leftDigit)begin
+red <= 3'b111;
+blue <= 3'b111;
+green <= 3'b111;
+end
+
+else begin
+red <= redGame;
+blue <= blueGame;
+green <= greenGame;
+end
+end
 					
 endmodule
+

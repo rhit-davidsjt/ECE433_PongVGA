@@ -10,7 +10,7 @@
 //this is how it is done by the video timer of the pong game
 // x coordinate has to cover the whole line from 0 to 800 for the game module to work
 
-module hsyncModule2020fall #(parameter xresolution=10)(
+module hsyncModule2021fall #(parameter xresolution=10)(
 input [xresolution-1:0] SynchPulse, BackPorch, ActiveVideo,FrontPorch,
 input PixelClock, reset, clock,
 output hsync, LineEnd, output reg [xresolution-1:0] xposition);
